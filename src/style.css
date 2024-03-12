@@ -47,15 +47,15 @@ input{
     padding: 10px;
     border: 1px solid #00975d;
     border-radius: 5px;
-    background-color: #494949;
-    color: #8f8f8f;
+    background-color: #272727;
+    color: #c4c4c4;
     margin: 5px;
 } 
 button{
     width: 10%;
     padding: 10px;
     background-color: #1f1f1f;
-    color: #33c58d;
+    color: #00975d;
     border: 1px solid #00975d;
     border-radius: 10px;
     font-size: 1em;
@@ -63,6 +63,7 @@ button{
 }
 button:hover{
     border: 1px solid #33c58d;
+    color: #33c58d;
     cursor: pointer;
 }
 
