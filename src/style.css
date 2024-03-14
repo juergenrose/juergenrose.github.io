@@ -6,19 +6,45 @@ body{
 .container{
     width: 90%;
     background-color: #1f1f1f;
-    color: #e7e7e7;
+    color: #ccc;
     border: 1px solid #00975d;
     border-radius: 10px;
     box-shadow: 0px 5px 10px #004d2f;
     margin: auto;
 }
+hr{
+    border: 1px solid #00975d31;
+}
+.divSkills{
+    background-color: #303030;
+    border-radius: 5px;
+    width: 600px;
+    margin:auto;
+
+}
+.divSkills ul{
+    padding: 5px;
+}
+.divSkills li{
+    display:inline-flex;
+    text-align: center;
+    padding: 8px;
+}
 h1, h2, h3{
     margin: 35px;
 }
 p{
-    color: #e7e7e7;
+    color: #aaaaaa;
 }
-
+b{
+    color: #00975d;
+}
+img{
+    max-width: 250px;
+    height: auto;
+    filter: drop-shadow(0px 2px 10px #00975d );
+    margin: 2em;
+}
 ul{
     list-style-type: none;
     text-decoration: none;
@@ -48,9 +74,20 @@ input{
     border: 1px solid #00975d;
     border-radius: 5px;
     background-color: #272727;
-    color: #c4c4c4;
+    color: #ccc;
     margin: 5px;
 } 
+textarea{
+    width: 500px;
+    padding: 10px;
+    border: 1px solid #00975d;
+    border-radius: 5px;
+    background-color: #272727;
+    color: #ccc;
+    margin: 5px;
+    font-family:Arial, Helvetica, sans-serif;
+
+}
 button{
     width: 10%;
     padding: 10px;
@@ -79,4 +116,9 @@ footer a{
 footer a:hover{
     text-decoration: underline;
     color: #00975d;
+}
+
+::selection{
+    background-color: #00975d;
+    color: #1f1f1f;
 }
