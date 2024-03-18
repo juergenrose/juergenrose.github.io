@@ -2,11 +2,12 @@ body{
     background-color: #00975d;
     font-family:Arial, Helvetica, sans-serif;
     text-align: center;
+    color: #303030;
 }
 .container{
     width: 90%;
-    background-color: #1f1f1f;
-    color: #ccc;
+    background-color: #d8d8d8;
+    color: #303030;
     border: 1px solid #00975d;
     border-radius: 10px;
     box-shadow: 0px 5px 10px #004d2f;
@@ -17,10 +18,11 @@ hr{
 }
 .divSkills{
     background-color: #303030;
+    color: #ccc;
     border-radius: 5px;
-    width: 600px;
-    margin:auto;
-
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
 }
 .divSkills ul{
     padding: 5px;
@@ -42,7 +44,7 @@ b{
 img{
     max-width: 250px;
     height: auto;
-    filter: drop-shadow(0px 2px 10px #00975d );
+    filter: drop-shadow(0px 2px 10px #555 );
     margin: 2em;
 }
 ul{
@@ -67,36 +69,40 @@ li a:hover{
     background-color: #272727;
     border-radius: 10px;
 }
+form{
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+}
 
 input{
-    width: 500px;
+    width: 100%;
     padding: 10px;
     border: 1px solid #00975d;
     border-radius: 5px;
     background-color: #272727;
     color: #ccc;
-    margin: 5px;
 } 
 textarea{
-    width: 500px;
+    width: 100%;
     padding: 10px;
     border: 1px solid #00975d;
     border-radius: 5px;
     background-color: #272727;
     color: #ccc;
-    margin: 5px;
     font-family:Arial, Helvetica, sans-serif;
 
 }
 button{
-    width: 10%;
+    width: 100%;
+    max-width: 400px;
     padding: 10px;
     background-color: #1f1f1f;
     color: #00975d;
     border: 1px solid #00975d;
     border-radius: 10px;
     font-size: 1em;
-    margin: 10px;
+    margin: 5px;
 }
 button:hover{
     border: 1px solid #33c58d;
