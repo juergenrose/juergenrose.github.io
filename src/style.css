@@ -1,5 +1,5 @@
 body{
-    background-color: #555;
+    background-color: #006666;
     font-family:Arial, Helvetica, sans-serif;
     text-align: center;
     color: #303030;
@@ -9,34 +9,35 @@ body{
     max-width: 1200px;
     background-color: #272727;
     color: #ccc;
-    border: 1px solid #555;
+    border: 1px solid #004440;
     border-radius: 10px;
-    box-shadow: 0px 5px 10px #aaa;
+    box-shadow: 0px 5px 10px #00b9ad;
     margin: auto;
+    padding: 5px;
 }
 
 .divSkills{
     background-color: #303030;
     color: #ccc;
     border-radius: 5px;
-    width: 100%;
+    width: 90%;
     max-width: 600px;
     margin: auto;
 }
 .divSkills ul{
-    padding: 5px;
+    padding: 15px;
 }
 .divSkills li{
     display:inline-flex;
     text-align: center;
-    padding: 8px;
+    padding: 10px;
 }
 a{
     text-decoration: none;
     color: #fafafa;
 }
 a:hover{
-    color: #555;
+    color: #007770;
 }
 
 h1, h2, h3{
@@ -55,9 +56,7 @@ img{
     margin: 2em;
 }
 nav{
-    background-color: #1f1f1f;
-    padding: 10px;
-    margin-bottom: 25px;
+    margin: 25px;
 }
 ul{
     list-style-type: none;
@@ -92,7 +91,7 @@ textarea{
     width: 90%;
     padding: 10px;
     max-width: 600px;
-    border: 1px solid #555;
+    border: 1px solid #007770;
     border-radius: 5px;
     background-color: #272727;
     color: #ccc;
@@ -104,15 +103,15 @@ button{
     max-width: 250px;
     padding: 10px;
     background-color: #1f1f1f;
-    color: #aaa;
-    border: 1px solid #555;
+    color: #007770;
+    border: 1px solid #007770;
     border-radius: 10px;
     font-size: 1em;
     margin: 5px;
 }
 button:hover{
-    border: 1px solid #fafafa;
-    color: #fafafa;
+    border: 1px solid #aaa;
+    color: #aaa;
     cursor: pointer;
 }
 
@@ -127,7 +126,7 @@ footer a{
 }
 footer a:hover{
     text-decoration: underline;
-    color: #555;
+    color: #006666;
 }
 
 ::selection{
