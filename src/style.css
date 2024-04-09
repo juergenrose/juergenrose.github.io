@@ -1,11 +1,10 @@
 body{
-    background-color: #006666;
     font-family:Arial, Helvetica, sans-serif;
     text-align: center;
     color: #303030;
 }
 .container{
-    width: 90%;
+    width: 95%;
     max-width: 1200px;
     background-color: #272727;
     color: #ccc;
@@ -14,6 +13,11 @@ body{
     margin: auto;
 }
 
+hr{
+    margin: 4em;
+    height: 1px;
+    border-color: #555;
+}
 .divSkills{
     background-color: #303030;
     color: #ccc;
