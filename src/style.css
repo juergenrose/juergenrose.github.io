@@ -110,6 +110,7 @@ li a:hover {
   display: none;
   position: fixed;
   z-index: 1;
+  padding-top: 5em;
   left: 0;
   top: 0;
   width: 100%;
@@ -136,7 +137,6 @@ li a:hover {
   text-align: center;
   padding: 10px;
   background-color: #555;
-  border-radius: 5px;
   margin: 2px;
 }
 
