@@ -1,4 +1,4 @@
 # juergenrose.github.io
-
-## Website under construction!
-
+Just a simple CV Website
+ 
+Website still under construction!
