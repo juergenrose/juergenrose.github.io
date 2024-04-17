@@ -1,68 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="src/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style.css" />
     <title>juergenrose</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="container">
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="#aboutme">&Uuml;ber mich</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#contact">Kontakt</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <section id="aboutme">
-                <img src="src/img/23116BW036.png" alt="">
-                <p>Hallo, mein Name ist J&uuml;rgen Mosgan.</p>
-                <p>Angehender Software-Entwickler und Linux Enthusiast.</b></p>
-                <p>Einige meiner Projekte finden Sie auf meinem <a href="https://github.com/juergenrose">GitHub Profil</a>.</p>
-            </section>
-            <hr>
-            <section id="skills">
-                <h2>SKILLS</h2>
-                <div class="divSkills">
-                    <ul>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>Bootstrap</li>
-                        <li>JavaScript</li>
-                        <li>JSON</li>
-                        <li>Node.js</li>
-                        <li>Git</li>
-                        <li>WordPress</li>
-                        <li>VS Code</li>
-                        <li>MS Office</li>
-                        <li>Google Workspace</li>
-                        <li>Jira</li>
-                        <li>Slack</li>
-                        <li>Windows</li>
-                        <li>GNU/Linux</li>
-                    </ul>
-                </div>
-            </section>
-            <hr>
-            <section id="contact">
-                <h2>KONTAKT</h2>
-                <p>Sie m&ouml;chten sich mit mir in Kontakt setzen?</p>
-                <br>
-                <a class="linkBtn" href="mailto:j.mosgan@gmail.com">Email senden</a>
-            </section>
-        </main>
-        <br>
-        <footer>
-            
-            <a href="https://github.com/juergenrose">Code on Github</a>
-        </footer>
-    </div>
-</body>
 
+      <header>
+        <nav>
+          <ul>
+            <li><a href="#aboutme">&Uuml;ber mich</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+
+        <section id="aboutme">
+          <img src="src/img/23116BW036.png" />
+          <h3>Hallo, mein Name ist J&uuml;rgen Mosgan.</h3>
+          <p>Angehender Fullstack Developer und Linux Enthusiast.</p>
+          <br>
+
+          <button id="cvBtn">Berufserfahrung</button>
+          <a type="button" class="linkBtn" href="https://github.com/juergenrose">GitHub Profil</a>
+
+          <hr />
+
+          <div id="modalCv" class="modal">
+            <div class="cvContent">
+              <div class="cvHead">
+                <h2>Berufserfahrung</h2>
+              </div>
+              <div class="cvBody">
+                <h3>12/23 - 04/24 | SimpleWay Technologies GmbH</h3>
+                <p>Praktikum als Fullstack Web Developer</p>
+              </div>
+              <br>
+                <button id="closeBtn" type="submit">Schließen</button>
+            </div>
+        </section>
+
+        <section id="skills">
+          <h2>SKILLS</h2>
+          <div class="divSkills">
+              <ul>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>Bootstrap</li>
+                  <li>JavaScript</li>
+                  <li>JSON</li>
+                  <li>Node.js</li>
+                  <li>Git</li>
+                  <li>WordPress</li>
+                  <li>VS Code</li>
+                  <li>MS Office</li>
+                  <li>Google Workspace</li>
+                  <li>Jira</li>
+                  <li>Windows</li>
+                  <li>GNU/Linux</li>
+              </ul>
+          </div>
+        </section>
+
+        <hr>
+
+        <section id="contact">
+          <h2>KONTAKT</h2>
+          <p>Sie m&ouml;chten sich mit mir in Kontakt setzen?</p>
+          <br />
+          <a type="button" class="linkBtn" href="mailto:j.mosgan@gmail.com">Email senden</a>
+        </section>
+      </main>
+      <br />
+
+      <footer>
+        <a href="https://github.com/juergenrose">Code on Github</a>
+      </footer>
+    </div>
+
+
+    <!-- script for the modal-->
+    <script>
+        const modal = document.getElementById("modalCv");
+        const modalBtn = document.getElementById("cvBtn");
+        const closeBtn = document.getElementById("closeBtn");
+
+        //shows modal
+        modalBtn.onclick = function () {
+            modal.style.display = "block";
+        };
+
+        //close modal
+        closeBtn.onclick = function() {
+            modal.style.display = "none";
+        };
+    </script>
+  </body>
 </html>
