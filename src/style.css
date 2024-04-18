@@ -17,15 +17,6 @@ hr {
   margin: 4em;
   border: 1px solid #1f1f1f;
 }
-
-a {
-  text-decoration: none;
-  color: #fafafa;
-}
-a:hover {
-  color: #007770;
-}
-
 /* Font settings*/
 
 h1,
@@ -42,7 +33,9 @@ p {
 img {
   max-width: 250px;
   height: auto;
-  filter: drop-shadow(0px 2px 10px #006666);
+  border: 5px solid #004440;
+  border-radius: 10px;
+  box-shadow: 0px 5px 10px #1f1f1f;
   margin: 2em;
 }
 
@@ -54,25 +47,26 @@ nav {
   padding: 5px;
 }
 
-/*Skills*/
-
 ul {
   list-style-type: none;
   text-decoration: none;
   margin: 2em;
   padding: 5px;
 }
+
 li {
   display: inline;
   text-align: end;
 }
+
 li a {
-  color: #aaa;
+  color: #fafafa;
   text-decoration: none;
   margin: 5px 5px;
   font-size: 1.2em;
   padding: 10px;
 }
+
 li a:hover {
   color: #fafafa;
   background-color: #2e2e2e;
@@ -81,11 +75,20 @@ li a:hover {
 
 /*Skills*/
 
+.divSkills {
+  display: flex;
+  justify-content: center; /* Horizontal zentrieren */
+  align-items: center; /* Vertikal zentrieren */
+}
+
 .divSkills ul {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
+  max-width: 600px;
+  margin: 0;
 }
 
 .divSkills ul li {
@@ -95,13 +98,8 @@ li a:hover {
   color: #fafafa;
   border-radius: 5px;
   text-align: center;
-  width: 150px;
+  width: 45%;
   box-shadow: 0px 5px 10px #1f1f1f;
-  transition: transform 0.2s ease-in-out;
-}
-
-.divSkills ul li:hover {
-  transform: translateY(-2px);
 }
 
 /* Modal */
@@ -143,7 +141,7 @@ li a:hover {
 .cvHead {
   padding: 2px 16px;
   background-color: #004440;
-  color: white;
+  color: #fafafa;
 }
 
 /*Buttons*/
@@ -152,32 +150,35 @@ button {
   font-size: 1em;
   padding: 10px;
   background-color: #1f1f1f;
-  color: #aaa;
-  border: none;
+  color: #fafafa;
+  border: 1px solid #303030;
   border-radius: 5px;
   margin-bottom: 1.5em;
 }
 
 button:hover {
   background-color: #004440;
-  color: #aaa;
+  border: 1px solid #fafafa;
+  color: #fafafa;
   text-decoration: none;
   cursor: pointer;
 }
 
 .linkBtn {
+  text-decoration: none;
   font-size: 1em;
   padding: 10px;
   background-color: #1f1f1f;
-  color: #aaa;
-  border: none;
+  color: #fafafa;
+  border: 1px solid #303030;
   border-radius: 5px;
   margin-bottom: 1.5em;
 }
 
 .linkBtn:hover {
   background-color: #004440;
-  color: #aaa;
+  border: 1px solid #fafafa;
+  color: #fafafa;
   text-decoration: none;
   cursor: pointer;
 }
