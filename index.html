@@ -9,7 +9,6 @@
 
   <body>
     <div class="container">
-
       <header>
         <nav>
           <ul>
@@ -21,88 +20,51 @@
       </header>
 
       <main>
-
         <section id="aboutme">
-          <img src="src/img/23116BW036.jpg" />
-          <h3>Hallo, mein Name ist J&uuml;rgen Mosgan.</h3>
-          <p>Angehender Fullstack Developer und Linux Enthusiast.</p>
-          <br>      
-
-          <button id="cvBtn">Berufserfahrung</button>
-          <a class="linkBtn" href="https://github.com/juergenrose">GitHub Profil</a>
-
-          <hr />
-
-          <div id="modalCv" class="modal">
-            <div class="cvContent">
-              <div class="cvHead">
-                <h2>Berufserfahrung</h2>
-              </div>
-              <div class="cvBody">
-                <h3>04/24 - laufend | Shel Software & Engineering GmbH</h3>
-                <p>Praktikum als Backend Developer</p>
-                <p><b>Technologien</b>: Node.js, MySQL, MSSQL</p>
-                <hr>
-                <h3>12/23 - 04/24 | SimpleWay Technologies GmbH</h3>
-                <p>Praktikum als Fullstack Web Developer</p>
-                <p><b>Technologien</b>: HTML, CSS, JavaScript, Node.js, Django, MySQL</p>
-              </div>
-              <br>
-                <button id="closeBtn" type="submit">Schließen</button>
+          <div class="container">
+            <img class="image" src="src/img/image.png" />
+            <div class="text">
+              <h3>Hallo, mein Name ist J&uuml;rgen Mosgan.</h3>
+              <p>Frontend Developer und Linux Enthusiast.</p>
+              <br />
+              <button class="downloadBtn">Download CV</button>
             </div>
-        </section>
-
-       
-        <section id="skills">
-          <h2>SKILLS</h2>
-          <div class="divSkills">
-              <ul>
-                  <li>HTML</li>
-                  <li>CSS</li>
-                  <li>Bootstrap</li>
-                  <li>JavaScript</li>
-                  <li>Node.js</li>
-                  <li>Git</li>
-                  <li>SQL</li>
-                  <li>WordPress</li>
-                  <li>Windows</li>
-                  <li>GNU/Linux</li>
-              </ul>
           </div>
         </section>
 
-        <hr>
+        <section id="skills">
+          <div class="divSkills">
+
+          </div>
+        </section>
 
         <section id="contact">
-          <h2>KONTAKT</h2>
-          <p>Sie m&ouml;chten sich mit mir in Kontakt setzen?</p>
-          <br />
-          <a class="linkBtn" href="mailto:j.mosgan@gmail.com">Email senden</a>
         </section>
       </main>
       <br />
 
       <footer>
-        <a href="https://github.com/juergenrose/juergenrose.github.io">Code on Github</a>
+        <a href="https://github.com/juergenrose/juergenrose.github.io"
+          >Code on Github</a
+        >
       </footer>
     </div>
 
-
     <!-- script for the modal-->
-    <script>
-        const modal = document.getElementById("modalCv");
-        const modalBtn = document.getElementById("cvBtn");
-        const closeBtn = document.getElementById("closeBtn");
+    <!-- <script>
+      const modal = document.getElementById("modalCv");
+      const modalBtn = document.getElementById("cvBtn");
+      const closeBtn = document.getElementById("closeBtn");
 
-        //shows modal
-        modalBtn.onclick = function () {
-            modal.style.display = "block";
-        };
+      //shows modal
+      modalBtn.onclick = function () {
+        modal.style.display = "block";
+      };
 
-        //close modal
-        closeBtn.onclick = function() {
-            modal.style.display = "none";
-        };
-    </script>
+      //close modal
+      closeBtn.onclick = function () {
+        modal.style.display = "none";
+      };
+    </script> -->
   </body>
 </html>
