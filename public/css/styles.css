@@ -8,38 +8,49 @@ body {
   color: #111;
 }
 
-/*navbar settings*/
-nav {
-  overflow: hidden;
-  position: relative;
+/* navbar settings */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
 }
 
-ul {
+.navLinks,
+.navIcons {
+  display: flex;
+}
+
+.navLinks ul,
+.navIcons ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: flex-end;
 }
 
-li {
+.navLinks li,
+.navIcons li {
   margin: 0;
   font-size: 1.5em;
 }
 
-li a {
+.navLinks a,
+.navIcons a {
   display: block;
   color: #f8f8f8;
   text-align: center;
   padding: 14px 20px;
   text-decoration: none;
 }
-
-li a:hover {
+.navLinks a:hover,
+.navIcons a:hover {
   color: #666;
   cursor: pointer;
 }
-
+.navIcons img {
+  width: 32px;
+}
 /*about me section*/
 #aboutme {
   font-size: 1.5em;
@@ -53,7 +64,7 @@ li a:hover {
 
 #aboutme .image {
   margin-right: 2em;
-  width: 350px;
+  width: 400px;
   height: auto;
 }
 
@@ -81,67 +92,30 @@ li a:hover {
 #skills {
   background-color: #ffba3b;
   padding: 2em;
-  font-size: 1.3em;
-}
-#skills .text {
-  color: #111;
 }
 #skills .container {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#skills .skillItem {
-  margin: 2em;
+.skillItem {
+  margin: 0 2em;
+  width: 60px;
 }
 
 /*portfolio section*/
-#portfolio .container{
+#portfolio {
   color: #f8f8f8;
-  font-size: 1.3em;
+  background-color: #111;
+  font-size: 1.2em;
 }
-.carousel {
-  position: relative;
-  max-width: 50%;
-  margin: auto;
-  overflow: hidden;
-}
-
-.carousel-inner {
+#portfolio .container {
   display: flex;
-  transition: transform 0.5s ease-in-out;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2em;
 }
-
-.carousel-item {
-  min-width: 100%;
-  box-sizing: border-box;
-}
-
-.carousel-item img {
-  width: 600px;
-  height: auto;
-}
-
-.carousel-control {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
-  border: none;
-  color: white;
-  padding: 10px;
-  cursor: pointer;
-  z-index: 1000;
-}
-
-.carousel-control.prev {
-  left: 10px;
-}
-
-.carousel-control.next {
-  right: 10px;
-}
-
 
 /*contact section*/
 #contact {
@@ -154,6 +128,9 @@ li a:hover {
   flex-direction: column;
   align-items: center;
   text-align: center;
+}
+#contact h2 {
+  margin-bottom: 2em;
 }
 
 #contact .emailForm {
@@ -170,18 +147,18 @@ li a:hover {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  max-width: 1000px;
+  max-width: 800px;
 }
 
-#contact .emailForm input[type="email"]{
-  width: 100%;
+#contact .emailForm input[type="email"] {
+  width: 600px;
   margin: 1em 0;
   padding: 1em;
   border: 0;
   border-radius: 30px;
 }
 #contact .emailForm textarea {
-  width: 100%;
+  width: 600px;
   height: 300px;
   margin: 1em 0;
   padding: 1em;
@@ -189,6 +166,9 @@ li a:hover {
   border-radius: 30px;
 }
 
+#contact .emailForm .contactLabel {
+  margin-top: 2em;
+}
 #contact .emailBtn {
   margin-top: 1em;
   padding: 1em;
@@ -201,6 +181,11 @@ li a:hover {
 #contact .emailBtn:hover {
   background-color: #222;
   cursor: pointer;
+}
+#contact .images {
+  margin: 2em;
+  max-width: 32px;
+  height: auto;
 }
 
 /*footer*/
