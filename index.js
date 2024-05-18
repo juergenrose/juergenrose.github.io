@@ -1,44 +1,50 @@
-const express = require('express');
-const bodyParser = require('body-parser');
-const nodemailer = require('nodemailer');
-require('dotenv').config();
+const express = require("express");
+const bodyParser = require("body-parser");
+const nodemailer = require("nodemailer");
+require("dotenv").config();
 
 const app = express();
 
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(express.static('public'));
+app.use(express.static("public"));
 
-app.get('/', (req, res) => {
-    res.sendFile(__dirname + '/views/index.html');
+app.get("/", (req, res) => {
+  res.sendFile(__dirname + "/views/index.html");
 });
 
-app.post('/contact', (req, res) => {
-    const { name, email, message } = req.body;
+app.post("/contact", (req, res) => {
+  const { name, email, emailText } = req.body;
 
-    const transporter = nodemailer.createTransport({
-        service: 'gmail',
-        auth: {
-            user: process.env.EMAIL_USER,
-            pass: process.env.EMAIL_PASS
-        }
-    });
+  let transporter = nodemailer.createTransport({
+    service: "gmail",
+    auth: {
+      type: "OAuth2",
+      user: process.env.MAIL_USERNAME,
+      pass: process.env.MAIL_PASSWORD,
+      clientId: process.env.OAUTH_CLIENTID,
+      clientSecret: process.env.OAUTH_CLIENT_SECRET,
+      refreshToken: process.env.OAUTH_REFRESH_TOKEN,
+    },
+  });
 
-    const mailOptions = {
-        from: email,
-        to: process.env.EMAIL_USER,
-        subject: `Kontaktformular Nachricht von ${name}`,
-        text: message
-    };
+  const mailOptions = {
+    from: email,
+    to: process.env.MAIL_USERNAME,
+    subject: `Nachricht von der Website`,
+    text: `Name: ${name}\nEmail: ${email}\n\nMessage:\n${emailText}`,
+  };
 
-    transporter.sendMail(mailOptions, (error, info) => {
-        if (error) {
-            return res.status(500).send('Etwas ist schief gelaufen.');
-        }
-        res.send('Nachricht erfolgreich gesendet!');
-    });
+  transporter.sendMail(mailOptions, (error, info) => {
+    if (error) {
+      console.error("Error sending email:", error);
+      return res.status(500).send("Etwas ist schief gelaufen.");
+    }
+    console.log("Email send successfully<");
+    res.redirect("/");
+  });
 });
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
-    console.log(`Server läuft auf Port ${PORT}`);
+  console.log(`s ${PORT}`);
 });
