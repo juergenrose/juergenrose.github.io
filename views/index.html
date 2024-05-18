@@ -31,7 +31,7 @@
               <h2>Hallo, mein Name ist J&uuml;rgen Mosgan.</h2>
               <p>Frontend Developer und Linux Enthusiast.</p>
               <br />
-              <button class="downloadBtn">Download CV</button>
+              <button class="downloadBtn"><a href="cv.pdf" download="juergen_mosgan_cv.pdf"> Download CV</a></button>
               <br />
             </div>
           </div>
@@ -101,21 +101,23 @@
             <div class="emailForm">
               <form action="/contact" method="post">
                 <div>
-                  <label class="contactLabel" for="email"
-                    >Bitte geben Sie Ihre Email an</label
-                  >
+                  <label class="contactLabel" for="name">Name</label>
                   <br />
-                  <input type="email" id="email" name="email" required />
+                  <input type="text" id="name" name="name" placeholder="Geben Sie hier Ihren Namen ein" required />
                 </div>
                 <div>
-                  <label class="contactLabel" for="emailText"
-                    >Was ist Ihr Anliegen?</label
-                  >
+                  <label class="contactLabel" for="email">Email</label>
                   <br />
-                  <textarea id="emailText" name="emailText" required></textarea>
+                  <input type="email" id="email" name="email" placeholder="you@domain.com" required />
+                </div>
+                <div>
+                  <label class="contactLabel" for="emailText">Nachricht</label>
+                  <br />
+                  <textarea id="emailText" name="emailText" placeholder="Was darf ich f&uuml;r Sie tun?" required></textarea>
                 </div>
                 <button class="emailBtn" type="submit">Email senden</button>
               </form>
+              
               <br />
             </div>
 
