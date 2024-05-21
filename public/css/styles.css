@@ -1,10 +1,14 @@
 /* universal settings*/
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: #111;
 }
 ::selection {
-  background-color: #888;
+  background-color: #ffc500;
   color: #111;
 }
 
@@ -101,6 +105,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 .skillItem {
   margin: 0 2em;
@@ -115,7 +120,8 @@ body {
   padding: 2em;
 }
 #aboutme .container {
-  display: flexbox;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   max-width: 1200px;
@@ -156,22 +162,28 @@ body {
   min-width: 100%;
   box-sizing: border-box;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .carousel-item img {
-  width: 350px;
+  width: 400px;
   height: auto;
 }
-
+.carousel-text {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
 .carousel-control {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: #ffa600;
   border: none;
-  color: white;
-  padding: 10px;
+  border-radius: 50%;
+  color: #111;
+  padding: 1em;
   cursor: pointer;
   z-index: 1000;
 }
@@ -293,4 +305,66 @@ footer a:hover {
 .socialItem img {
   width: 48px;
   margin: 0 0.5em;
+}
+
+/*Mobile*/
+@media only screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+  .navLinks {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .navLinks a,
+  .navIcons a {
+    padding: 0.5em;
+  }
+  .navIcons img {
+    width: 36px;
+    flex-direction: row;
+  }
+  .container-home {
+    flex-direction: column;
+    text-align: center;
+  }
+  .container-home .image {
+    margin: 0;
+    width: 100%;
+  }
+  .container-home .text {
+    font-size: 1.1em;
+  }
+  .downloadBtn {
+    margin-bottom: 1em;
+  }
+  #portfolio .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .carousel-item img {
+    width: 100%;
+  }
+  .carousel-control {
+    padding: 0.5em;
+  }
+  #contact .container {
+    padding: 1em;
+  }
+  #contact .emailForm input[type="text"],
+  #contact .emailForm input[type="email"],
+  #contact .emailForm textarea {
+    width: 100%;
+    max-width: none;
+  }
+  .sociallinks {
+    flex-direction: row;
+    align-items: center;
+  }
+  .socialItem img {
+    margin: 0.5em;
+    width: 36px;
+  }
 }
