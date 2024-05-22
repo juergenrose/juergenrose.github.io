@@ -1,3 +1,4 @@
+//carousel slide effect
 let currentSlide = 0;
 
 function showSlide(index) {
@@ -11,7 +12,6 @@ function showSlide(index) {
   } else {
     currentSlide = index;
   }
-
   const offset = -currentSlide * 100;
   document.querySelector(
     ".carousel-inner"
@@ -25,16 +25,14 @@ function prevSlide() {
 }
 showSlide(currentSlide);
 
-
 //navbar hamburger menu
-document.addEventListener('DOMContentLoaded', function() {
-  const hamburgerMenu = document.querySelector('.hamburger-menu');
-  const navLinks = document.querySelector('.navLinks');
-  const navIcons = document.querySelector('.navIcons');
+document.addEventListener("DOMContentLoaded", function () {
+  const hamburgerMenu = document.querySelector(".hamburger-menu");
+  const navLinks = document.querySelector(".navLinks");
+  const navIcons = document.querySelector(".navIcons");
 
-  hamburgerMenu.addEventListener('click', function() {
-    navLinks.classList.toggle('active');
-    navIcons.classList.toggle('active');
+  hamburgerMenu.addEventListener("click", function () {
+    navLinks.classList.toggle("active");
+    navIcons.classList.toggle("active");
   });
 });
-
