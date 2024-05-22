@@ -13,6 +13,22 @@ body {
 }
 
 /* navbar settings */
+.hamburger-menu {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 3em;
+  height: 3em;
+  cursor: pointer;
+  margin-top: 1em;
+
+}
+
+.bar {
+  width: 100%;
+  height: 3px;
+  background-color: #ffa600;
+}
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -44,9 +60,9 @@ body {
   display: block;
   color: #f8f8f8;
   text-align: center;
-  padding: 0 1.2em 0 0;
+  padding: 1em;
   text-decoration: none;
-}
+  }
 .navLinks a:hover,
 .navIcons a:hover {
   color: #ec7e00;
@@ -140,142 +156,101 @@ body {
   margin-bottom: 2em;
 }
 #portfolio .container {
-  color: #f8f8f8;
-  justify-content: center;
-  align-items: center;
-  display: flex;
+  max-width: 800px;
+  margin: 0 auto;
 }
+
 .carousel {
   position: relative;
-  max-width: 100%;
-  margin: auto;
+  width: 100%;
   overflow: hidden;
-  justify-content: center;
 }
 
 .carousel-inner {
   display: flex;
-  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease;
 }
 
 .carousel-item {
-  min-width: 100%;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex: 0 0 100%;
+  margin-right: 1em;
+  text-align: center;
 }
 
 .carousel-item img {
   width: 400px;
   height: auto;
 }
-.carousel-text {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-}
 .carousel-control {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   background-color: #ffa600;
+  color: #f8f8f8;
   border: none;
-  border-radius: 50%;
-  color: #111;
-  padding: 1em;
+  padding: 10px;
   cursor: pointer;
-  z-index: 1000;
 }
 
 .carousel-control.prev {
-  left: 10px;
+  left: 0;
 }
 
 .carousel-control.next {
-  right: 10px;
+  right: 0;
 }
 
 /*contact section*/
-#contact {
-  padding: 2em;
+#contact{
   font-size: 1.3em;
   background-color: #ffa600;
 }
 #contact .container {
-  padding: 2;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2em;
+}
+#contact h2{
   text-align: center;
 }
-#contact h2 {
-  margin-bottom: 2em;
+.emailForm {
+  padding: 2em;
+  border-radius: 3em;
 }
 
-#contact .emailForm {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
+.contactLabel {
+  margin-left: 1em;
+}
+
+input[type="text"],
+input[type="email"] {
   width: 100%;
-  max-width: 1000px;
-}
-
-#contact .emailForm form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  max-width: 800px;
-  text-align: left;
-}
-
-#contact .emailForm input[type="text"] {
-  width: 600px;
-  margin: 1em 0;
   padding: 1em;
-  border: 0;
-  border-radius: 30px;
-  text-align: left;
-}
-#contact .emailForm input[type="email"] {
-  width: 600px;
-  margin: 1em 0;
-  padding: 1em;
-  border: 0;
-  border-radius: 30px;
-}
-#contact .emailForm textarea {
-  width: 600px;
-  height: 300px;
-  margin: 1em 0;
-  padding: 1em;
-  border: 0;
-  border-radius: 30px;
-}
-
-#contact .emailForm .contactLabel {
-  margin: 2em;
-  font-size: 0.8em;
-}
-#contact .emailBtn {
-  margin-top: 1em;
-  padding: 1em;
+  margin-bottom: 1em;
   border: 0;
   border-radius: 2em;
+}
+textarea {
+  width: 100%;
+  height: 300px;
+  padding: 1em;
+  margin-bottom: 1em;
+  border: 0;
+  border-radius: 2em;
+}
+
+.emailBtn {
   background-color: #111;
   color: #f8f8f8;
+  padding: 1em;
+  border: none;
+  border-radius: 3em;
+  cursor: pointer;
   font-size: 1em;
 }
-#contact .emailBtn:hover {
+
+.emailBtn:hover {
   background-color: #222;
-  cursor: pointer;
-}
-#contact .images {
-  margin: 2em;
-  max-width: 24px;
-  height: auto;
 }
 
 /*footer*/
@@ -313,14 +288,27 @@ footer a:hover {
     flex-direction: column;
     align-items: center;
   }
-  .navLinks {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  .navLinks,
+  .navIcons {
+    display: none;
+    width: 100%;
+    text-align: center;
+    padding: 1em 0;
   }
-  .navLinks a,
-  .navIcons a {
-    padding: 0.5em;
+  .navLinks li,
+  .navIcons li {
+    margin: 0;
+  }
+  .hamburger-menu {
+    display: flex;
+  }
+  .navLinks.active{
+    display: block;
+  }
+  .navIcons.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .navIcons img {
     width: 36px;
@@ -350,14 +338,10 @@ footer a:hover {
   .carousel-control {
     padding: 0.5em;
   }
-  #contact .container {
-    padding: 1em;
-  }
   #contact .emailForm input[type="text"],
   #contact .emailForm input[type="email"],
   #contact .emailForm textarea {
-    width: 100%;
-    max-width: none;
+    width: calc(100% - 1em);
   }
   .sociallinks {
     flex-direction: row;
