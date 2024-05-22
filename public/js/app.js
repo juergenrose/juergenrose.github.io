@@ -17,13 +17,24 @@ function showSlide(index) {
     ".carousel-inner"
   ).style.transform = `translateX(${offset}%)`;
 }
-
 function nextSlide() {
   showSlide(currentSlide + 1);
 }
-
 function prevSlide() {
   showSlide(currentSlide - 1);
 }
-
 showSlide(currentSlide);
+
+
+//navbar hamburger menu
+document.addEventListener('DOMContentLoaded', function() {
+  const hamburgerMenu = document.querySelector('.hamburger-menu');
+  const navLinks = document.querySelector('.navLinks');
+  const navIcons = document.querySelector('.navIcons');
+
+  hamburgerMenu.addEventListener('click', function() {
+    navLinks.classList.toggle('active');
+    navIcons.classList.toggle('active');
+  });
+});
+
