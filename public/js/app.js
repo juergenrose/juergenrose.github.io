@@ -1,29 +1,26 @@
 //carousel slide effect
-let currentSlide = 0;
+const carouselInner = document.querySelector('.carousel-inner');
+const carouselItems = document.querySelectorAll('.carousel-item');
+let currentIndex = 0;
 
-function showSlide(index) {
-  const slides = document.querySelectorAll(".carousel-item");
-  const totalSlides = slides.length;
-
-  if (index >= totalSlides) {
-    currentSlide = 0;
-  } else if (index < 0) {
-    currentSlide = totalSlides - 1;
-  } else {
-    currentSlide = index;
-  }
-  const offset = -currentSlide * 100;
-  document.querySelector(
-    ".carousel-inner"
-  ).style.transform = `translateX(${offset}%)`;
+function updateCarousel() {
+  const offset = -currentIndex * 100;
+  carouselInner.style.transform = `translateX(${offset}%)`;
 }
+
 function nextSlide() {
-  showSlide(currentSlide + 1);
+  currentIndex = (currentIndex + 1) % carouselItems.length;
+  updateCarousel();
 }
+
 function prevSlide() {
-  showSlide(currentSlide - 1);
+  currentIndex = (currentIndex - 1 + carouselItems.length) % carouselItems.length;
+  updateCarousel();
 }
-showSlide(currentSlide);
+
+document.querySelector('.carousel-control.next').addEventListener('click', nextSlide);
+document.querySelector('.carousel-control.prev').addEventListener('click', prevSlide);
+
 
 //navbar hamburger menu
 document.addEventListener("DOMContentLoaded", function () {
