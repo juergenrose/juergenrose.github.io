@@ -29,7 +29,9 @@ document.addEventListener("DOMContentLoaded", function () {
   const navIcons = document.querySelector(".navIcons");
 
   hamburgerMenu.addEventListener("click", function () {
+    hamburgerMenu.classList.toggle("active");
     navLinks.classList.toggle("active");
     navIcons.classList.toggle("active");
   });
 });
+
