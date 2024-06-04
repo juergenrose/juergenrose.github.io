@@ -39,7 +39,21 @@
               <h2>Hallo, mein Name ist J&uuml;rgen Mosgan.</h2>
               <p>Frontend Developer und Linux Enthusiast.</p>
               <br />
-              <button class="downloadBtn"><a href="cv.pdf" download="juergen_mosgan_cv.pdf"> Download CV</a></button>
+              <button id="cvBtn">Berufserfahrung</button>
+
+              <div id="cvModal" class="modal">
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                    <h1>04/24 - laufend | Shel Software & Engineering GmbH</h1>
+                    <h2>Backend Developer Praktikum</h2>
+                    <p>aufgaben....</p>
+                    <hr>
+                    <h1>12/23 - 04/24 | SimpleWay Technologies GmbH</h1>
+                    <h2>Fullstack Developer Praktikum</h2>
+                    <p>aufgaben....</p>
+                </div>
+              
+              </div>
               <br />
             </div>
           </div>
@@ -71,8 +85,8 @@
         </section>
 
         <section id="portfolio">
-          <h2 class="font">Meine Projekte</h2>
           <div class="container">
+            <h2>Meine Projekte</h2>
             <div class="carousel">
               <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -141,7 +155,7 @@
             <a href="https://github.com/juergenrose"><img src="images/github-white.png" alt="GitHub" /></a>
           </div>
           </div>
-          <p>Made with ♥️ in Klagenfurt</p>
+          <p>Made with <span class="heart">♥️</span> in Klagenfurt</p>
         </div>
       </footer>
     </div>

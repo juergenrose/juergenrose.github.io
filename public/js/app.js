@@ -35,6 +35,24 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+//modal function
+const modal = document.getElementById("cvModal");
+const btn = document.getElementById("cvBtn");
+const span = document.getElementsByClassName("close")[0];
+//open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+//close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+//close when click outside of the modal
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
 
 //confirmation email message
 document.addEventListener("DOMContentLoaded", function() {
