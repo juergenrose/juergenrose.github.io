@@ -2,7 +2,6 @@
 html {
   scroll-behavior: smooth;
 }
-
 body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: #111;
@@ -39,7 +38,6 @@ body {
 .hamburger-menu.active .bar:nth-child(2) {
   opacity: 0;
 }
-
 .hamburger-menu.active .bar:nth-child(3) {
   transform: translateY(-12px) rotate(-45deg);
 }
@@ -48,13 +46,11 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-
 .navLinks,
 .navIcons {
   display: flex;
   list-style-type: none;
 }
-
 .navLinks ul,
 .navIcons ul {
   list-style-type: none;
@@ -62,13 +58,11 @@ body {
   padding: 0;
   display: flex;
 }
-
 .navLinks li,
 .navIcons li {
   margin: 0;
   font-size: 1.5em;
 }
-
 .navLinks a,
 .navIcons a {
   display: block;
@@ -88,9 +82,10 @@ body {
 .navIcons img {
   width: 48px;
 }
+
+
 /*about me section*/
 #home {
-  font-size: 1.5em;
   background-color: #111;
 }
 .container-home {
@@ -98,40 +93,86 @@ body {
   justify-content: center;
   align-items: center;
 }
-
 .container-home .image {
   margin-right: 2em;
   max-width: 550px;
   height: auto;
 }
-
 .container-home .text {
   color: #f8f8f8;
-  font-size: 1.3em;
+  font-size: 32px;
 }
 
-/*download button*/
-.downloadBtn {
+
+/*modal cv button*/
+#cvBtn {
+  margin-top: 1em;
   background-color: #ffa600;
   border: 0;
-  border-radius: 15px;
+  border-radius: 35px;
   padding: 20px 25px;
-  font-size: 0.8em;
+  font-size: 25px;
   color: #111;
   transition: background-color 0.3s ease, transform 0.3s ease;
   transform: translateY(-50%);
 }
-.downloadBtn a {
+#cvBtn a {
   text-decoration: none;
   color: inherit;
 }
-.downloadBtn:hover {
+#cvBtn:hover {
   background-color: #ec7e00;
   color: #111;
   cursor: pointer;
   transform: translateY(-50%) scale(1.1);
-
 }
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1; 
+  padding-top: 5em;
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+}
+.modal-content {
+  background-color: #222;
+  text-align: center;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #222;
+  border-radius: 15px;
+  width: 60%;
+}
+.modal-content h1{
+  font-size: 26px;
+  color: #ffa600;
+}
+.modal-content h2{
+  font-size: 22px;
+}
+.modal-content p{
+  font-size: 20px;
+}
+hr{
+  border: 1px solid #ffa600;
+  margin: 2em;
+}
+.close {
+  color: #be3f3f;
+  float: right;
+  font-size: 40px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: #d14242;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 
 /*skills section*/
 #skills {
@@ -153,7 +194,6 @@ body {
 #aboutme {
   color: #111;
   background-color: #ffa600;
-  font-size: 1.2em;
   padding: 2em;
 }
 #aboutme .container {
@@ -165,40 +205,49 @@ body {
   margin: auto;
   line-height: 1.5;
 }
+#aboutme h2{
+  font-size: 26px;
+}
+#aboutme p{
+  font-size: 20px;
+}
+
 
 /*portfolio section*/
 #portfolio {
   padding: 2em;
-  font-size: 1.3em;
   color: #f8f8f8;
 }
-.font {
+#portfolio h2 {
+  font-size: 26px;
   text-align: center;
   margin-bottom: 2em;
+}
+#portfolio h3 {
+  font-size: 22px;
+}
+#portfolio p {
+  font-size: 18px;
 }
 #portfolio .container {
   max-width: 1000px;
   margin: 0 auto;
 }
-
 .carousel {
   position: relative;
   width: 100%;
   overflow: hidden;
 }
-
 .carousel-inner {
   display: flex;
   transition: transform 0.5s ease-in-out;
   width: 100%;
 }
-
 .carousel-item {
   flex: 0 0 100%;
   margin-right: 0;
   text-align: center;
 }
-
 .carousel-item img {
   width: 100%;
   height: auto;
@@ -209,7 +258,7 @@ body {
   background-color: #111;
   color: #ffc500;
   font-weight: bold;
-  padding: 1.5em 2em;
+  padding: 25px;
   cursor: pointer;
   border: none;
   border-radius: 50%;
@@ -217,18 +266,15 @@ body {
   transform: translateY(-50%);
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
-
 .carousel-control:hover {
   background-color: #ffa600;
   color: #111;
   box-shadow: 0 2px 6px #111;
   transform: translateY(-50%) scale(1.1);
 }
-
 .carousel-control.prev {
   left: 1em;
 }
-
 .carousel-control.next {
   right: 1em;
 }
@@ -236,7 +282,6 @@ body {
 
 /*contact section*/
 #contact {
-  font-size: 1.3em;
   background-color: #ffa600;
 }
 #contact .container {
@@ -246,26 +291,27 @@ body {
 }
 #contact h2 {
   text-align: center;
+  font-size: 26px;
 }
 .emailForm {
   padding: 2em;
-  border-radius: 10px;
+  border-radius: 20px;
   text-align: center;
 }
 .contactLabel {
   display: block;
   text-align: left;
+  font-size: 18px;
   margin-left: 1em;
   margin-bottom: -1em;
 }
-
 input[type="text"],
 input[type="email"] {
   width: 100%;
   padding: 1em;
   margin-bottom: 1em;
   border: 0;
-  border-radius: 10px;
+  border-radius: 20px;
 }
 textarea {
   width: 100%;
@@ -273,32 +319,30 @@ textarea {
   padding: 1em;
   margin-bottom: 1em;
   border: 0;
-  border-radius: 10px;
+  border-radius: 20px;
 }
 textarea::placeholder,
 input::placeholder {
   font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
 }
-
 .emailBtn {
   background-color: #111;
   color: #f8f8f8;
   padding: 20px 25px;
   border: none;
-  border-radius: 15px;
+  border-radius: 35px;
   cursor: pointer;
-  font-size: 1em;
+  font-size: 20px;
   margin: 2em 0;
   display: inline-block;
   transition: background-color 0.3s ease, transform 0.3s ease;
   transform: translateY(-50%);
 }
-
 .emailBtn:hover {
   background-color: #222;
   transform: translateY(-50%) scale(1.1);
 }
-
 #confirm-message {
   background-color: #3d793d;
   color: #f8f8f8;
@@ -306,8 +350,8 @@ input::placeholder {
   border: 0;
   border-radius: 10px;
   display: none;
+  font-size: 18px;
 }
-
 #error-message{
   background-color: #be3f3f;
   color: #f8f8f8;
@@ -315,6 +359,7 @@ input::placeholder {
   border: 0;
   border-radius: 10px;
   display: none;
+  font-size: 18px;
 }
 
 
@@ -327,7 +372,7 @@ footer {
   text-align: center;
   color: #f8f8f8;
   padding: 1.5em;
-  font-size: 1.2em;
+  font-size: 18px;
 }
 footer a {
   color: #ffa600;
@@ -345,6 +390,9 @@ footer a:hover {
 .socialItem img {
   width: 48px;
   margin: 0 0.5em;
+}
+.heart{
+  color: #be3f3f;
 }
 
 /*Mobile*/
