@@ -35,3 +35,14 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+
+//confirmation email message
+document.addEventListener("DOMContentLoaded", function() {
+  const urlParams = new URLSearchParams(window.location.search);
+  const success = urlParams.get('success');
+  if (success === 'true') {
+    document.getElementById('confirm-message').style.display = 'block';
+  } else if (success === 'false') {
+    document.getElementById('error-message').style.display = 'block';
+  }
+});

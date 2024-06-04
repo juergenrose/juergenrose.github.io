@@ -37,10 +37,10 @@ app.post("/contact", (req, res) => {
   transporter.sendMail(mailOptions, (error, info) => {
     if (error) {
       console.error("Error sending email:", error);
-      return res.status(500).send("Etwas ist schief gelaufen.");
+      return res.redirect("/?success=false");
     }
-    console.log("Email send successfully<");
-    res.redirect("/");
+    console.log("Email sent successfully");
+    res.redirect("/?success=true");
   });
 });
 
