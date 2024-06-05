@@ -32,6 +32,12 @@
         
 
       <main>
+        <div id="confirm-message">
+          Ihre Nachricht wurde erfolgreich gesendet!
+        </div>
+        <div id="error-message">
+          Etwas ist schief gelaufen. Bitte versuchen Sie es erneut.
+        </div>
         <section id="home">
           <div class="container-home">
             <img class="image" src="/images/jk.png" />
@@ -46,11 +52,14 @@
                   <span class="close">&times;</span>
                     <h1>04/24 - laufend | Shel Software & Engineering GmbH</h1>
                     <h2>Backend Developer Praktikum</h2>
-                    <p>aufgaben....</p>
+                    <p><b class="boldFont">Projekt:</b>Report Generator mit multipler Datenbank Anbindung mittels Node,js, MySQL und MSSQL</p>
+                    <p>API Dokumentation auf Basis von OpenAPI 3</p>
+                    <p>Frontend mittels HTML5, CSS3, JavaScript (DOM) erstellt.</p>
                     <hr>
                     <h1>12/23 - 04/24 | SimpleWay Technologies GmbH</h1>
                     <h2>Fullstack Developer Praktikum</h2>
-                    <p>aufgaben....</p>
+                    <p>Einführung in die Webentwicklung mit diverse Sprachen (Node.js, Python, Django, SQL)</p>
+                    <p><b class="boldFont">Projekt:</b> Device manager mit CRUD Funktion mittels HTML5, CSS3, JavaScript, Node.js und MySQL</p>
                 </div>
               
               </div>
@@ -113,15 +122,7 @@
         <section id="contact">
           <div class="container">
             <h2>Kontaktieren Sie mich!</h2>
-
-            <div id="confirm-message">
-              Ihre Nachricht wurde erfolgreich gesendet!
-            </div>
-            <div id="error-message">
-              Etwas ist schief gelaufen. Bitte versuchen Sie es erneut.
-            </div>
-
-            <div class="emailForm">
+           <div class="emailForm">
               <form action="/contact" method="post">
                 <div>
                   <label class="contactLabel" for="name">Name</label>
