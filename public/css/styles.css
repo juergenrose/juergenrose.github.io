@@ -71,7 +71,7 @@ body {
   padding: 1em;
   text-decoration: none;
 }
-.navIcons a:hover{
+.navIcons a:hover {
   transition: background-color 0.3s ease, transform 0.3s ease;
   transform: translateY(-2%);
 }
@@ -82,7 +82,6 @@ body {
 .navIcons img {
   width: 48px;
 }
-
 
 /*about me section*/
 #home {
@@ -102,7 +101,6 @@ body {
   color: #f8f8f8;
   font-size: 32px;
 }
-
 
 /*modal cv button*/
 #cvBtn {
@@ -129,13 +127,13 @@ body {
 .modal {
   display: none;
   position: fixed;
-  z-index: 1; 
+  z-index: 1;
   padding-top: 5em;
   left: 0;
   top: 0;
-  width: 100%; 
-  height: 100%; 
-  overflow: auto; 
+  width: 100%;
+  height: 100%;
+  overflow: auto;
 }
 .modal-content {
   background-color: #222;
@@ -146,17 +144,21 @@ body {
   border-radius: 15px;
   width: 60%;
 }
-.modal-content h1{
-  font-size: 26px;
+.modal-content h1 {
+  font-size: 30px;
   color: #ffa600;
 }
-.modal-content h2{
-  font-size: 22px;
+.modal-content h2 {
+  font-size: 26px;
+  margin-bottom: 50px;
 }
-.modal-content p{
+.modal-content p {
   font-size: 20px;
 }
-hr{
+.boldFont {
+  color: #ec7e00;
+}
+hr {
   border: 1px solid #ffa600;
   margin: 2em;
 }
@@ -172,7 +174,6 @@ hr{
   text-decoration: none;
   cursor: pointer;
 }
-
 
 /*skills section*/
 #skills {
@@ -205,13 +206,12 @@ hr{
   margin: auto;
   line-height: 1.5;
 }
-#aboutme h2{
+#aboutme h2 {
   font-size: 26px;
 }
-#aboutme p{
+#aboutme p {
   font-size: 20px;
 }
-
 
 /*portfolio section*/
 #portfolio {
@@ -278,7 +278,6 @@ hr{
 .carousel-control.next {
   right: 1em;
 }
-
 
 /*contact section*/
 #contact {
@@ -347,21 +346,26 @@ input::placeholder {
   background-color: #3d793d;
   color: #f8f8f8;
   padding: 25px;
+  width: 50%;
+  text-align: center;
+  margin: auto;
   border: 0;
   border-radius: 10px;
   display: none;
   font-size: 18px;
 }
-#error-message{
+#error-message {
   background-color: #be3f3f;
   color: #f8f8f8;
   padding: 25px;
+  width: 50%;
+  text-align: center;
+  margin: auto;
   border: 0;
   border-radius: 10px;
   display: none;
   font-size: 18px;
 }
-
 
 /*footer*/
 footer {
@@ -391,7 +395,7 @@ footer a:hover {
   width: 48px;
   margin: 0 0.5em;
 }
-.heart{
+.heart {
   color: #be3f3f;
 }
 
