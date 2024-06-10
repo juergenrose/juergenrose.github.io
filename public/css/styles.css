@@ -16,6 +16,8 @@ body {
   display: none;
   flex-direction: column;
   justify-content: space-around;
+  align-self: flex-end;
+  margin-right: 1em;
   width: 2.5em;
   height: 2.5em;
   cursor: pointer;
@@ -46,7 +48,11 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-.navLinks,
+.navLinks{
+  display: flex;
+  list-style-type: none;
+  margin-left: 1em;
+}
 .navIcons {
   display: flex;
   list-style-type: none;
@@ -407,15 +413,17 @@ footer a:hover {
     flex-direction: column;
     align-items: center;
   }
-  .navLinks,
-  .navIcons {
+  .navIcons{
+    position: relative;
+  }
+  .navLinks {
     display: none;
     width: 100%;
+    background-color: #151515;
     text-align: center;
-    padding: 1em 0;
+    padding: 1em;
   }
-  .navLinks li,
-  .navIcons li {
+  .navLinks li {
     margin: 0;
   }
   .hamburger-menu {
