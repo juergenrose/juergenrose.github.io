@@ -4,4 +4,4 @@
 
 
 You want to see it live? \
-visit https://jmosgan.info/
+visit https://juergen-mosgan.dev/
