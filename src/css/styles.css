@@ -631,46 +631,11 @@ video {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 
 @media (min-width: 768px) {
   .hero-text {
-    width: 100%;
-  }
-
-  @media (min-width: 640px) {
-    .hero-text {
-      max-width: 640px;
-    }
-  }
-
-  @media (min-width: 768px) {
-    .hero-text {
-      max-width: 768px;
-    }
-  }
-
-  @media (min-width: 1024px) {
-    .hero-text {
-      max-width: 1024px;
-    }
-  }
-
-  @media (min-width: 1280px) {
-    .hero-text {
-      max-width: 1280px;
-    }
-  }
-
-  @media (min-width: 1536px) {
-    .hero-text {
-      max-width: 1536px;
-    }
-  }
-
-  .hero-text {
-    margin-left: auto;
-    margin-right: auto;
     margin-top: 8rem;
     margin-bottom: 8rem;
   }
@@ -690,6 +655,7 @@ video {
 }
 
 .hero-paragraph {
+  margin-top: 0.5rem;
   font-size: 1.125rem;
   line-height: 1.75rem;
   font-weight: 700;
@@ -712,16 +678,12 @@ video {
 }
 
 .aboutme-paragraph {
-  margin-left: 1rem;
-  margin-right: 1rem;
   font-size: 1.125rem;
   line-height: 1.75rem;
 }
 
 @media (min-width: 768px) {
   .aboutme-paragraph {
-    margin-left: auto;
-    margin-right: auto;
     width: 66.666667%;
   }
 }

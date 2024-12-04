@@ -13,20 +13,20 @@
     @apply text-red-200 mt-2;
   }
   .hero-text {
-    @apply md:container md:mx-auto mx-4 flex flex-col justify-center items-center md:my-32 my-16;
+    @apply mx-4 flex flex-col justify-center items-center text-center md:my-32 my-16;
   }
   .hero-heading {
     @apply md:text-5xl text-3xl font-bold;
   }
   .hero-paragraph {
-    @apply md:text-2xl text-lg font-bold;
+    @apply md:text-2xl text-lg font-bold  mt-2;
   }
   /*About me*/
   .aboutme-heading {
     @apply text-2xl font-bold mb-4;
   }
   .aboutme-paragraph {
-    @apply md:w-2/3 text-lg md:mx-auto mx-4;
+    @apply md:w-2/3 text-lg;
   }
   .experience-heading {
     @apply text-2xl font-bold mb-4 mt-8 text-center border-b-2 border-cyan-700;
