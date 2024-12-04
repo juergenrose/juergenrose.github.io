@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .info {
+    @apply bg-red-700 mx-auto flex flex-col items-center py-2;
+  }
+  .info-heading {
+    @apply text-3xl font-bold text-red-100;
+  }
+  .info-paragraph {
+    @apply text-red-200 mt-2;
+  }
+  /*Navigation*/
+  .navigation {
+    @apply container mx-auto;
+  }
+  .nav-bar {
+    @apply list-none flex justify-end space-x-8 my-5;
+  }
+  .nav-links {
+    @apply text-lg font-bold uppercase hover:text-teal-800 hover:underline hover:underline-offset-4 cursor-pointer;
+  }
+
+  /*Hero*/
+  .hero-text {
+    @apply container mx-auto flex flex-col justify-center items-center my-32;
+  }
+  .hero-heading {
+    @apply text-5xl font-bold;
+  }
+  .hero-paragraph {
+    @apply text-2xl font-bold;
+  }
+  /*About me*/
+  .aboutme-heading {
+    @apply text-2xl font-bold mb-4;
+  }
+  .experience-heading {
+    @apply text-2xl font-bold mb-4 mt-8 text-center border-b-2 border-cyan-700;
+  }
+  .inner-container {
+    @apply my-4;
+  }
+  .image {
+    @apply w-12;
+  }
+  .middleHeading {
+    @apply font-bold text-lg;
+  }
+  .paragraph {
+    @apply text-lg;
+  }
+  .home-btn {
+    @apply bg-black text-gray-50 p-2 mb-8;
+  }
+}
