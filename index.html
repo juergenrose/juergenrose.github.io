@@ -9,15 +9,14 @@
   <body>
     <header>
       <div class="info">
-        <p class="info-heading">Vorübergehende Darstellung</ü>
+        <p class="info-heading">Vorübergehende Darstellung</p>
         <p class="info-paragraph">
           Du befindest dich auf einer vorläufigen Seite, die dir einen Überblick
-          über mich gibt. Die vollständige Website wird bald
-          verfügbar sein.
+          über mich gibt. Die vollständige Website wird bald verfügbar sein.
         </p>
       </div>
     </header>
-    <main class="mx-auto">
+    <main class="md:container md:mx-auto mx-4">
       <section>
         <div class="hero-text">
           <h2 class="hero-heading">Hallo, mein Name ist J&uuml;rgen Mosgan.</h2>
@@ -25,10 +24,10 @@
         </div>
       </section>
 
-      <section class="container mx-auto">
-        <div class="flex flex-col items-center mb-16">
+      <section class="md:container">
+        <div class="flex flex-col items-center md:mb-16 mb-4">
           <h2 class="aboutme-heading">&Uuml;ber mich</h2>
-          <p class="aboutme-paragraph w-2/3">
+          <p class="aboutme-paragraph">
             Web-Entwicklung ist f&uuml;r mich mehr als nur ein Beruf - es ist
             eine Leidenschaft, die mich antreibt, benutzerfreundliche und
             &auml;sthetisch ansprechende Webanwendungen zu gestalten. Ebenso
@@ -43,7 +42,10 @@
             <h2 class="experience-heading">Skills</h2>
             <div class="grid grid-cols-4 gap-5">
               <div class="image">
-                <img src="./src/assets/skills/html5-black.png" alt="HTML5 icon" />
+                <img
+                  src="./src/assets/skills/html5-black.png"
+                  alt="HTML5 icon"
+                />
               </div>
               <div class="image">
                 <img src="./src/assets/skills/css3-black.png" alt="CSS3 icon" />
@@ -61,7 +63,10 @@
                 />
               </div>
               <div class="image">
-                <img src="./src/assets/skills/mysql-black.png" alt="MySQL icon" />
+                <img
+                  src="./src/assets/skills/mysql-black.png"
+                  alt="MySQL icon"
+                />
               </div>
               <div class="image">
                 <img
@@ -87,66 +92,78 @@
             <h2 class="experience-heading">Berufserfahrung</h2>
 
             <div class="inner-container">
-              <h3 class="middleHeading">04/24 - laufend | Shel Software & Engineering GmbH</h3>
-              <p>Fullstack Developer Praktikum</p>
+              <h3 class="middleHeading">
+                04/24 - laufend | Shel Software & Engineering GmbH
+              </h3>
+              <p class="paragraph">Fullstack Developer Praktikum</p>
             </div>
             <div class="inner-container">
-              <h3 class="middleHeading">12/23 - 04/24 | SimpleWay Technologies GmbH</h3>
-              <p>Fullstack Developer Praktikum</p>
+              <h3 class="middleHeading">
+                12/23 - 04/24 | SimpleWay Technologies GmbH
+              </h3>
+              <p class="paragraph">Fullstack Developer Praktikum</p>
             </div>
             <div class="inner-container">
               <h3 class="middleHeading">08/07 - 10/23 | Diverse Unternehmen</h3>
-              <p>Handwerker</p>
+              <p class="paragraph">Handwerker</p>
             </div>
             <div class="inner-container">
-              <h3 class="middleHeading">07/04 - 07/07 | Johann Müller - Plan & Bau GmbH</h3>
-              <p>Maurerlehre</p>
+              <h3 class="middleHeading">
+                07/04 - 07/07 | Johann Müller - Plan & Bau GmbH
+              </h3>
+              <p class="paragraph">Maurerlehre mit LAP</p>
             </div>
           </div>
           <div class="education">
             <h2 class="experience-heading">Ausbildung</h2>
             <div class="inner-container">
-              <h3 class="middleHeading">09/24 - 03/25 | Coding School Wörthersee</h3>
-              <p>Modern Webdevelopment Lehrgang</p>
+              <h3 class="middleHeading">
+                09/24 - 03/25 | Coding School Wörthersee
+              </h3>
+              <p class="paragraph">Modern Webdevelopment Lehrgang</p>
             </div>
             <div class="inner-container">
-              <h3 class="middleHeading">01/23 - laufend | HTL Mössingerstraße</h3>
-              <p>Software Engineering, Datenbanken & Informationssyteme</p>
+              <h3 class="middleHeading">
+                01/23 - laufend | HTL Mössingerstraße
+              </h3>
+              <p class="paragraph">
+                Software Engineering, Datenbanken & Informationssyteme
+              </p>
             </div>
           </div>
         </div>
       </section>
     </main>
 
-        <!-- Footer -->
-        <footer>
-          <div class="container mx-auto mt-16">
-            <div class="flex justify-center">
-              <div class="socialItem">
-                <a href="https://www.linkedin.com/in/juergen-mosgan">
-                  <img
-                    src="./src/assets/icons/brand-linkedin.svg"
-                    alt="LinkedIn Icon"
-                    aria-label="Linkedin Icon"
-                /></a>
-              </div>
-              <div class="socialItem">
-                <a href="https://github.com/juergenrose">
-                  <img
-                    src="./src/assets/icons/brand-github.svg"
-                    alt="GitHub Icon"
-                    aria-label="GitHub Icon"
-                  />
-                </a>
-              </div>
-            </div>
-            <ul class="flex justify-center space-x-8 mt-4">
-              <li><a href="imprint.html">Impressum</a></li>
-              <li><a href="data-privacy.html">Datenschutz</a></li>
-            </ul>
+    <!-- Footer -->
+    <footer>
+      <div class="md:container mx-auto mt-16">
+        <div class="flex justify-center">
+          <div class="socialItem">
+            <a href="https://www.linkedin.com/in/juergen-mosgan">
+              <img
+                src="./src/assets/icons/brand-linkedin.svg"
+                alt="LinkedIn Icon"
+                aria-label="Linkedin Icon"
+            /></a>
           </div>
-        </footer>
-    
+          <div class="socialItem">
+            <a href="https://github.com/juergenrose">
+              <img
+                src="./src/assets/icons/brand-github.svg"
+                alt="GitHub Icon"
+                aria-label="GitHub Icon"
+              />
+            </a>
+          </div>
+        </div>
+        <ul class="flex justify-center space-x-8 mt-4">
+          <li><a href="imprint.html">Impressum</a></li>
+          <li><a href="data-privacy.html">Datenschutz</a></li>
+        </ul>
+      </div>
+    </footer>
+
     <script src="js/app.js"></script>
   </body>
 </html>

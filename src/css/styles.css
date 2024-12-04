@@ -589,8 +589,6 @@ video {
 }
 
 .info {
-  margin-left: auto;
-  margin-right: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -598,6 +596,16 @@ video {
   background-color: rgb(185 28 28 / var(--tw-bg-opacity, 1));
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .info {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .info-heading {
@@ -614,65 +622,84 @@ video {
   color: rgb(254 202 202 / var(--tw-text-opacity, 1));
 }
 
-/*Navigation*/
-
-/*Hero*/
-
 .hero-text {
-  width: 100%;
-}
-
-@media (min-width: 640px) {
-  .hero-text {
-    max-width: 640px;
-  }
-}
-
-@media (min-width: 768px) {
-  .hero-text {
-    max-width: 768px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .hero-text {
-    max-width: 1024px;
-  }
-}
-
-@media (min-width: 1280px) {
-  .hero-text {
-    max-width: 1280px;
-  }
-}
-
-@media (min-width: 1536px) {
-  .hero-text {
-    max-width: 1536px;
-  }
-}
-
-.hero-text {
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 8rem;
-  margin-bottom: 8rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
+@media (min-width: 768px) {
+  .hero-text {
+    width: 100%;
+  }
+
+  @media (min-width: 640px) {
+    .hero-text {
+      max-width: 640px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .hero-text {
+      max-width: 768px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .hero-text {
+      max-width: 1024px;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    .hero-text {
+      max-width: 1280px;
+    }
+  }
+
+  @media (min-width: 1536px) {
+    .hero-text {
+      max-width: 1536px;
+    }
+  }
+
+  .hero-text {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+  }
+}
+
 .hero-heading {
-  font-size: 3rem;
-  line-height: 1;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
   font-weight: 700;
 }
 
+@media (min-width: 768px) {
+  .hero-heading {
+    font-size: 3rem;
+    line-height: 1;
+  }
+}
+
 .hero-paragraph {
-  font-size: 1.5rem;
-  line-height: 2rem;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
   font-weight: 700;
+}
+
+@media (min-width: 768px) {
+  .hero-paragraph {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
 }
 
 /*About me*/
@@ -682,6 +709,21 @@ video {
   font-size: 1.5rem;
   line-height: 2rem;
   font-weight: 700;
+}
+
+.aboutme-paragraph {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+@media (min-width: 768px) {
+  .aboutme-paragraph {
+    margin-left: auto;
+    margin-right: auto;
+    width: 66.666667%;
+  }
 }
 
 .experience-heading {
@@ -725,6 +767,11 @@ video {
   color: rgb(249 250 251 / var(--tw-text-opacity, 1));
 }
 
+.mx-4 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -740,24 +787,16 @@ video {
   margin-bottom: 2rem;
 }
 
-.mb-16 {
-  margin-bottom: 4rem;
-}
-
-.mt-4 {
-  margin-top: 1rem;
-}
-
-.mt-8 {
-  margin-top: 2rem;
+.mb-4 {
+  margin-bottom: 1rem;
 }
 
 .mt-16 {
   margin-top: 4rem;
 }
 
-.block {
-  display: block;
+.mt-4 {
+  margin-top: 1rem;
 }
 
 .flex {
@@ -766,18 +805,6 @@ video {
 
 .grid {
   display: grid;
-}
-
-.w-2\/3 {
-  width: 66.666667%;
-}
-
-.w-6\/12 {
-  width: 50%;
-}
-
-.transform {
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .grid-cols-1 {
@@ -820,6 +847,53 @@ video {
 }
 
 @media (min-width: 768px) {
+  .md\:container {
+    width: 100%;
+  }
+
+  @media (min-width: 640px) {
+    .md\:container {
+      max-width: 640px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .md\:container {
+      max-width: 768px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .md\:container {
+      max-width: 1024px;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    .md\:container {
+      max-width: 1280px;
+    }
+  }
+
+  @media (min-width: 1536px) {
+    .md\:container {
+      max-width: 1536px;
+    }
+  }
+
+  .md\:mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .md\:mb-16 {
+    margin-bottom: 4rem;
+  }
+
+  .md\:w-6\/12 {
+    width: 50%;
+  }
+
   .md\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }

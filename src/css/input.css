@@ -4,7 +4,7 @@
 
 @layer components {
   .info {
-    @apply bg-red-700 mx-auto flex flex-col items-center py-2;
+    @apply bg-red-700 md:mx-auto flex flex-col items-center text-center py-2 px-4;
   }
   .info-heading {
     @apply text-3xl font-bold text-red-100;
@@ -12,30 +12,21 @@
   .info-paragraph {
     @apply text-red-200 mt-2;
   }
-  /*Navigation*/
-  .navigation {
-    @apply container mx-auto;
-  }
-  .nav-bar {
-    @apply list-none flex justify-end space-x-8 my-5;
-  }
-  .nav-links {
-    @apply text-lg font-bold uppercase hover:text-teal-800 hover:underline hover:underline-offset-4 cursor-pointer;
-  }
-
-  /*Hero*/
   .hero-text {
-    @apply container mx-auto flex flex-col justify-center items-center my-32;
+    @apply md:container md:mx-auto mx-4 flex flex-col justify-center items-center md:my-32 my-16;
   }
   .hero-heading {
-    @apply text-5xl font-bold;
+    @apply md:text-5xl text-3xl font-bold;
   }
   .hero-paragraph {
-    @apply text-2xl font-bold;
+    @apply md:text-2xl text-lg font-bold;
   }
   /*About me*/
   .aboutme-heading {
     @apply text-2xl font-bold mb-4;
+  }
+  .aboutme-paragraph {
+    @apply md:w-2/3 text-lg md:mx-auto mx-4;
   }
   .experience-heading {
     @apply text-2xl font-bold mb-4 mt-8 text-center border-b-2 border-cyan-700;
