@@ -33,6 +33,8 @@ export default function Experience() {
               <li className="experience-tools-tag">CSS3</li>
               <li className="experience-tools-tag">JavaScript</li>
               <li className="experience-tools-tag">NodeJS</li>
+              <li className="experience-tools-tag">Rest API</li>
+              <li className="experience-tools-tag">Swagger</li>
               <li className="experience-tools-tag">XSLT</li>
               <li className="experience-tools-tag">MySQL</li>
               <li className="experience-tools-tag">MSSQL</li>
@@ -67,6 +69,7 @@ export default function Experience() {
               <li className="experience-tools-tag">CSS3</li>
               <li className="experience-tools-tag">JavaScript</li>
               <li className="experience-tools-tag">NodeJS</li>
+              <li className="experience-tools-tag">Rest API</li>
               <li className="experience-tools-tag">Python</li>
               <li className="experience-tools-tag">Django</li>
               <li className="experience-tools-tag">MySQL</li>
