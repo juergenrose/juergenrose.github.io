@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+::selection {
+  @apply bg-violet-600 text-violet-50;
+}
+/*Header*/
+.nav {
+  @apply p-6 bg-gray-900;
+}
+.nav-bar {
+  @apply flex gap-4 justify-end;
+}
+.nav-link {
+  @apply text-lg font-medium text-teal-300 border border-gray-900 hover:border-violet-500 rounded cursor-pointer py-2 px-4 transition-all ease-in-out duration-300;
+}
