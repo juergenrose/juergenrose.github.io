@@ -10,7 +10,7 @@ const repeatedImages = [...imageUrls, ...imageUrls];
 
 export default function Skills() {
   return (
-    <section className="flex flex-col items-center justify-center mx-auto overflow-hidden border-2 border-teal-600 mt-16">
+    <section className="flex flex-col items-center justify-center mx-auto overflow-hidden border-2 border-teal-600 mt-20">
       <motion.div
         className="flex gap-5 mx-auto p-4 w-full"
         animate={{ x: ["00%", "-50%"] }} // Moves the icons left continuously
