@@ -1,55 +1,61 @@
 @import "tailwindcss";
 
 ::selection {
-  @apply bg-violet-600 text-violet-50;
+  @apply bg-teal-600 text-teal-50;
+}
+* {
+  @apply scroll-m-10 scroll-smooth;
+}
+body {
+  @apply bg-gray-900;
 }
 /*Header*/
 .nav {
-  @apply p-6 bg-gray-900;
+  @apply p-6 bg-gray-950;
 }
 .nav-bar {
   @apply flex gap-4 justify-end;
 }
 .nav-link {
-  @apply text-lg font-medium text-teal-300 border border-gray-900 hover:border-violet-500 rounded cursor-pointer py-2 px-4 transition-all ease-in-out duration-300;
+  @apply text-lg font-medium text-teal-300 border border-gray-900 hover:border-violet-500 hover:shadow hover:shadow-indigo-600 rounded-full cursor-pointer py-2 px-4 transition-all ease-in-out duration-300;
 }
 /*Hero*/
 .hero-heading {
-  @apply text-5xl font-bold text-teal-50;
+  @apply text-5xl font-bold text-violet-50;
 }
 .hero-paragraph {
-  @apply text-2xl font-medium text-teal-100;
+  @apply text-2xl font-medium text-violet-100;
 }
 .hero-span {
   @apply bg-gradient-to-r from-teal-500 to-violet-500 bg-clip-text text-transparent;
 }
 .hero-btn {
-  @apply text-lg font-medium bg-gradient-to-r from-violet-400 to-teal-400 py-3 px-6 rounded-lg  hover:from-teal-400 hover:to-violet-400 hover:shadow-md hover:shadow-indigo-600 mt-4 hover:scale-105 cursor-pointer transition ease-in-out duration-300;
+  @apply text-lg font-medium bg-gradient-to-r from-violet-500 to-teal-500 py-3 px-6 rounded-lg  hover:from-teal-400 hover:to-violet-400 hover:shadow-md hover:shadow-indigo-600 mt-4 hover:scale-105 cursor-pointer transition ease-in-out duration-300;
 }
 /*About me*/
 .aboutme-heading {
   @apply bg-gradient-to-r from-teal-500 to-violet-500 bg-clip-text  text-3xl font-bold text-transparent mb-4;
 }
 .aboutme-paragraph {
-  @apply text-gray-800 text-lg text-center;
+  @apply text-violet-100 text-lg text-center;
 }
 /*Skills*/
-.skills-heading {
-  @apply bg-gradient-to-r from-teal-500 to-violet-500 bg-clip-text  text-3xl font-bold text-transparent mb-4;
-}
 .skills-image {
   @apply w-20 h-auto p-2  transition ease-in-out duration-300;
 }
 /*Experience*/
 .experience-heading {
-  @apply bg-gradient-to-r from-teal-500 to-violet-500 bg-clip-text  text-3xl font-bold text-transparent mb-4;
+  @apply bg-gradient-to-r from-teal-500 to-violet-500 bg-clip-text text-3xl font-bold text-transparent mb-4;
 }
 .experience-date-font {
-  @apply font-bold;
+  @apply font-bold text-violet-50;
 }
 .experience-company-font {
-  @apply text-xl font-bold;
+  @apply text-xl font-bold text-violet-50;
+}
+.experience-paragraph-font {
+  @apply text-violet-100 mt-2;
 }
 .experience-tools-tag {
-  @apply border border-violet-600 rounded-full px-2 text-sm text-violet-600;
+  @apply border border-teal-300 rounded-full px-2 text-sm text-teal-300;
 }
