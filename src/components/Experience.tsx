@@ -32,7 +32,7 @@ export default function Experience() {
               einfachen Integration und Prüfung mit Swagger dokumentiert.
             </p>
             <div className="flex my-4">
-              <ul className="list-none flex gap-2">
+              <ul className="list-none flex gap-1">
                 <li className="experience-tools-tag">HTML5</li>
                 <li className="experience-tools-tag">CSS3</li>
                 <li className="experience-tools-tag">JavaScript</li>
@@ -70,7 +70,7 @@ export default function Experience() {
               eines Admin- und User-Dashboards zur Verwaltung der Geräte
             </p>
             <div className="flex my-4">
-              <ul className="list-none flex gap-2">
+              <ul className="list-none flex gap-1">
                 <li className="experience-tools-tag">HTML5</li>
                 <li className="experience-tools-tag">CSS3</li>
                 <li className="experience-tools-tag">JavaScript</li>
@@ -98,7 +98,8 @@ export default function Experience() {
           <div>
             <p className="experience-date-font">2007 - 2023</p>
             <p className="experience-company-font">
-              Handwerker bei diversen Unternehmen
+              Maurer, Eisenbieger, Produktionsarbeiter & Reifenmonteur bei
+              diversen Unternehmen
             </p>
           </div>
         </li>

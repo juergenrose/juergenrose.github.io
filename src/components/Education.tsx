@@ -25,7 +25,7 @@ export default function Education() {
               Software-Engineering, Datenbanken & Informationssysteme
             </p>
             <div className="flex my-4">
-              <ul className="list-none flex gap-2">
+              <ul className="list-none flex gap-1">
                 <li className="experience-tools-tag">HTML5</li>
                 <li className="experience-tools-tag">CSS3</li>
                 <li className="experience-tools-tag">Bootstrap</li>
@@ -61,12 +61,14 @@ export default function Education() {
               Modern Webdevelopment Lehrgang
             </p>
             <div className="flex my-4">
-              <ul className="list-none flex gap-2">
+              <ul className="list-none flex gap-1">
                 <li className="experience-tools-tag">HTML5</li>
                 <li className="experience-tools-tag">CSS3</li>
+                <li className="experience-tools-tag">SCSS</li>
                 <li className="experience-tools-tag">JavaScript</li>
                 <li className="experience-tools-tag">TypeScript</li>
                 <li className="experience-tools-tag">React</li>
+                <li className="experience-tools-tag">Tanstack</li>
                 <li className="experience-tools-tag">Rest API</li>
                 <li className="experience-tools-tag">Vite</li>
               </ul>
