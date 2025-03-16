@@ -6,7 +6,7 @@ import AboutMe from "../components/AboutMe";
 import Skills from "../components/Skills";
 import Experience from "../components/Experience";
 import Education from "../components/Education";
-import ContactForm from "../components/ContactForm";
+import Contact from "../components/Contact";
 
 const queryClient = new QueryClient();
 
@@ -23,7 +23,7 @@ function HomeComponent() {
         <Skills />
         <Experience />
         <Education />
-        <ContactForm />
+        <Contact />
       </QueryClientProvider>
     </>
   );
