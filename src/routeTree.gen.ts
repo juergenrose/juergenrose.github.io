@@ -11,10 +11,17 @@
 // Import Routes
 
 import { Route as rootRoute } from './routes/__root'
+import { Route as PrivacyImport } from './routes/privacy'
 import { Route as ImprintImport } from './routes/imprint'
 import { Route as IndexImport } from './routes/index'
 
 // Create/Update Routes
+
+const PrivacyRoute = PrivacyImport.update({
+  id: '/privacy',
+  path: '/privacy',
+  getParentRoute: () => rootRoute,
+} as any)
 
 const ImprintRoute = ImprintImport.update({
   id: '/imprint',
@@ -46,6 +53,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ImprintImport
       parentRoute: typeof rootRoute
     }
+    '/privacy': {
+      id: '/privacy'
+      path: '/privacy'
+      fullPath: '/privacy'
+      preLoaderRoute: typeof PrivacyImport
+      parentRoute: typeof rootRoute
+    }
   }
 }
 
@@ -54,36 +68,41 @@ declare module '@tanstack/react-router' {
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/imprint': typeof ImprintRoute
+  '/privacy': typeof PrivacyRoute
 }
 
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/imprint': typeof ImprintRoute
+  '/privacy': typeof PrivacyRoute
 }
 
 export interface FileRoutesById {
   __root__: typeof rootRoute
   '/': typeof IndexRoute
   '/imprint': typeof ImprintRoute
+  '/privacy': typeof PrivacyRoute
 }
 
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/imprint'
+  fullPaths: '/' | '/imprint' | '/privacy'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/imprint'
-  id: '__root__' | '/' | '/imprint'
+  to: '/' | '/imprint' | '/privacy'
+  id: '__root__' | '/' | '/imprint' | '/privacy'
   fileRoutesById: FileRoutesById
 }
 
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   ImprintRoute: typeof ImprintRoute
+  PrivacyRoute: typeof PrivacyRoute
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   ImprintRoute: ImprintRoute,
+  PrivacyRoute: PrivacyRoute,
 }
 
 export const routeTree = rootRoute
@@ -97,7 +116,8 @@ export const routeTree = rootRoute
       "filePath": "__root.tsx",
       "children": [
         "/",
-        "/imprint"
+        "/imprint",
+        "/privacy"
       ]
     },
     "/": {
@@ -105,6 +125,9 @@ export const routeTree = rootRoute
     },
     "/imprint": {
       "filePath": "imprint.tsx"
+    },
+    "/privacy": {
+      "filePath": "privacy.tsx"
     }
   }
 }

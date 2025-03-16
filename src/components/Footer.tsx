@@ -9,7 +9,7 @@ export default function Footer() {
             <Link to="/imprint">Impressum</Link>
           </li>
           <li className="footer-link">
-            <Link to="/data-privacy">Datenschutz</Link>
+            <Link to="/privacy">Datenschutz</Link>
           </li>
         </ul>
         <p className="footer-paragraph-font">&copy; by Jürgen Mosgan</p>
