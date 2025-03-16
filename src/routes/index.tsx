@@ -18,7 +18,6 @@ function HomeComponent() {
   return (
     <>
       <QueryClientProvider client={queryClient}>
-        <Header />
         <Hero />
         <AboutMe />
         <Skills />
