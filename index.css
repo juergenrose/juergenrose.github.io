@@ -17,7 +17,7 @@ body {
   @apply flex gap-4 justify-end;
 }
 .nav-link {
-  @apply text-lg font-medium text-teal-300 border border-gray-900 hover:border-violet-500 hover:shadow hover:shadow-indigo-600 rounded-full cursor-pointer py-2 px-4 transition-all ease-in-out duration-300;
+  @apply font-medium text-teal-400 border border-r-0 border-l-0 border-gray-900 hover:border-b-teal-600 hover:border-t-violet-600 hover:text-gray-100 cursor-pointer py-1 px-3 transition-all ease-in-out duration-700;
 }
 /*Hero*/
 .hero-heading {
@@ -54,8 +54,18 @@ body {
   @apply text-xl font-bold text-violet-50;
 }
 .experience-paragraph-font {
-  @apply text-violet-100 mt-2;
+  @apply text-violet-50 mt-2;
 }
 .experience-tools-tag {
   @apply border border-teal-300 rounded-full px-2 text-sm text-teal-300;
+}
+/*Footer*/
+.footer-bar {
+  @apply flex gap-5;
+}
+.footer-link {
+  @apply bg-gradient-to-r from-teal-500 to-violet-500 bg-clip-text font-medium text-transparent mb-4 py-1 px-3 hover:from-violet-500 hover:to-teal-500 border hover:border-b-teal-600 hover:border-t-violet-600 transition ease-in-out duration-700;
+}
+.footer-paragraph-font {
+  @apply text-violet-100 text-sm;
 }
