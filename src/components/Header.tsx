@@ -1,4 +1,6 @@
 import { useState } from "react";
+import hamburgerIcon from "../assets/icons/hamburger.svg";
+import closeIcon from "../assets/icons/close.svg";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -25,11 +27,7 @@ export default function Header() {
         {/* Mobile menu button */}
         <div className="md:hidden flex justify-end">
           <button onClick={() => setIsOpen(true)} className="text-violet-500">
-            <img
-              src="/src/assets/icons/hamburger.svg"
-              alt=""
-              className="text-violet-400 p-2"
-            />
+            <img src={hamburgerIcon} alt="" className="text-violet-400 p-2" />
           </button>
         </div>
 
@@ -49,7 +47,7 @@ export default function Header() {
                 className="absolute top-7 right-7"
               >
                 <img
-                  src="/src/assets/icons/close.svg"
+                  src={closeIcon}
                   alt=""
                   className="text-teal-400 hover:text-violet-400 p-1"
                 />

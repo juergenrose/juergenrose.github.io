@@ -1,5 +1,4 @@
 import { Link } from "@tanstack/react-router";
-import arrowIcon from "../assets/icons/arrow-left.svg";
 import homeIcon from "../assets/icons/home.svg";
 
 export default function DataPrivacy() {
