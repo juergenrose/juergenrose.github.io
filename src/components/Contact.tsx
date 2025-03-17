@@ -1,3 +1,7 @@
+import linkedinIcon from "../assets/icons/linkedin.svg";
+import githubIcon from "../assets/icons/github.svg";
+import mailIcon from "../assets/icons/mail.svg";
+
 export default function Contact() {
   return (
     <section
@@ -8,24 +12,24 @@ export default function Contact() {
       <div className="flex gap-4 mt-4">
         <a href="https://www.linkedin.com/in/juergen-mosgan" target="_blank">
           <img
-            src="/src/assets/icons/linkedin.svg"
-            alt="linkedin icon"
+            src={linkedinIcon}
+            alt="LinkedIn Icon"
             className="md:w-16 md:h-16 w-12 h-12 rounded-full p-2 bg-violet-500 hover:bg-teal-500 transition-colors"
           />
         </a>
 
         <a href="https://github.com/juergenrose" target="_blank">
           <img
-            src="/src/assets/icons/github.svg"
-            alt="github icon"
+            src={githubIcon}
+            alt="GitHub Icon"
             className="md:w-16 md:h-16 w-12 h-12 rounded-full p-2 bg-violet-500 hover:bg-teal-500 transition-colors"
           />
         </a>
 
         <a href="mailto:j.mosgan@gmail.com">
           <img
-            src="/src/assets/icons/mail.svg"
-            alt="github icon"
+            src={mailIcon}
+            alt="Mail Icon"
             className="md:w-16 md:h-16 w-12 h-12 rounded-full p-2 bg-violet-500 hover:bg-teal-500 transition-colors"
           />
         </a>

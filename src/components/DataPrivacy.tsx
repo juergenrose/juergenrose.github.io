@@ -1,13 +1,11 @@
 import { Link } from "@tanstack/react-router";
+import arrowIcon from "../assets/icons/arrow-left.svg";
 
 export default function DataPrivacy() {
   return (
     <section className="flex flex-col gap-1 md:mx-auto px-4 items-start justify-center content-start md:w-[800px] md:mt-20 mt-10">
       <Link to="/" className="home-btn">
-        <img
-          src="/src/assets/icons/arrow-left.svg"
-          alt="zurück zur Startseite Button"
-        />
+        <img src={arrowIcon} alt="zurück zur Startseite Button" />
       </Link>
 
       <h2 className="privacy-heading">Datenschutzerklärung</h2>
