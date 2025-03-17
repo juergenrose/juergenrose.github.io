@@ -1,12 +1,19 @@
 import { Link } from "@tanstack/react-router";
-import arrowIcon from "../assets/icons/arrow-left.svg";
+import homeIcon from "../assets/icons/home.svg";
 
 export default function Imprint() {
   return (
     <section className="flex flex-col gap-1 md:mx-auto px-4 items-start justify-center content-start md:w-[800px] md:mt-20 mt-10">
-      <Link to="/" className="home-btn">
-        <img src={arrowIcon} alt="zurück zur Startseite Button" />
-      </Link>
+      <div className="flex justify-center mx-auto gap-5">
+        <Link to="/" className="home-btn">
+          <img src={homeIcon} alt="zurück zur Startseite Button" />
+          Startseite
+        </Link>
+
+        <Link to="/privacy" className="home-btn">
+          Datenschutz
+        </Link>
+      </div>
 
       <h2 className="imprint-heading">Impressum</h2>
       <h3 className="imprint-middle-font">
