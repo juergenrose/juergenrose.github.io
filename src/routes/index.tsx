@@ -1,14 +1,10 @@
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { createFileRoute } from "@tanstack/react-router";
-import Header from "../components/Header";
 import Hero from "../components/Hero";
 import AboutMe from "../components/AboutMe";
 import Skills from "../components/Skills";
 import Experience from "../components/Experience";
 import Education from "../components/Education";
 import Contact from "../components/Contact";
-
-const queryClient = new QueryClient();
 
 export const Route = createFileRoute("/")({
   component: HomeComponent,
@@ -17,14 +13,12 @@ export const Route = createFileRoute("/")({
 function HomeComponent() {
   return (
     <>
-      <QueryClientProvider client={queryClient}>
-        <Hero />
-        <AboutMe />
-        <Skills />
-        <Experience />
-        <Education />
-        <Contact />
-      </QueryClientProvider>
+      <Hero />
+      <AboutMe />
+      <Skills />
+      <Experience />
+      <Education />
+      <Contact />
     </>
   );
 }
