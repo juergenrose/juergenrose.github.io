@@ -1,12 +1,12 @@
 export default function Experience() {
   return (
     <section
-      className="flex flex-col mx-auto items-start justify-center content-start w-[800px] mt-20"
+      className="flex flex-col md:mx-auto px-4 items-start justify-center content-start md:w-[800px] mt-20"
       id="experience"
     >
       <h2 className="experience-heading">Berufserfahrung</h2>
       <ul>
-        <li className="relative flex items-baseline gap-6 pb-5">
+        <li className="experience-container">
           <div className="before:absolute before:left-1.5 before:h-full before:w-[1px] before:bg-teal-600">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -32,7 +32,7 @@ export default function Experience() {
               einfachen Integration und Prüfung mit Swagger dokumentiert.
             </p>
             <div className="flex my-4">
-              <ul className="list-none flex gap-1">
+              <ul className="tools-list">
                 <li className="experience-tools-tag">HTML5</li>
                 <li className="experience-tools-tag">CSS3</li>
                 <li className="experience-tools-tag">JavaScript</li>
@@ -46,7 +46,7 @@ export default function Experience() {
             </div>
           </div>
         </li>
-        <li className="relative flex items-baseline gap-6 pb-5">
+        <li className="experience-container">
           <div className="before:absolute before:left-1.5 before:h-full before:w-[1px] before:bg-teal-600">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -70,7 +70,7 @@ export default function Experience() {
               eines Admin- und User-Dashboards zur Verwaltung der Geräte
             </p>
             <div className="flex my-4">
-              <ul className="list-none flex gap-1">
+              <ul className="tools-list">
                 <li className="experience-tools-tag">HTML5</li>
                 <li className="experience-tools-tag">CSS3</li>
                 <li className="experience-tools-tag">JavaScript</li>
@@ -83,7 +83,7 @@ export default function Experience() {
             </div>
           </div>
         </li>
-        <li className="relative flex items-baseline gap-6 pb-5">
+        <li className="experience-container">
           <div className="before:absolute before:left-1.5 before:h-full before:w-[1px] before:bg-teal-600">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -98,12 +98,30 @@ export default function Experience() {
           <div>
             <p className="experience-date-font">2007 - 2023</p>
             <p className="experience-company-font">
-              Maurer, Eisenbieger, Produktionsarbeiter & Reifenmonteur bei
-              diversen Unternehmen
+              Facharbeiter in diversen handwerklichen Betrieben
             </p>
           </div>
         </li>
-        <li className="relative flex items-baseline gap-6 pb-5">
+        <li className="experience-container">
+          <div className="before:absolute before:left-1.5 before:h-full before:w-[1px] before:bg-teal-600">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="12"
+              height="12"
+              className="bi bi-circle-fill fill-teal-600"
+              viewBox="0 0 16 16"
+            >
+              <circle cx="8" cy="8" r="8" />
+            </svg>
+          </div>
+          <div>
+            <p className="experience-date-font">2008</p>
+            <p className="experience-company-font">
+              Grundwehrdienst und freiwillige Waffenübung
+            </p>
+          </div>
+        </li>
+        <li className="experience-container">
           <div>
             <svg
               xmlns="http://www.w3.org/2000/svg"

@@ -1,12 +1,12 @@
 export default function Education() {
   return (
     <section
-      className="flex flex-col mx-auto items-start justify-center content-start w-[800px] mt-20"
+      className="flex flex-col md:mx-auto px-4 items-start justify-center content-start md:w-[800px] mt-20"
       id="education"
     >
       <h2 className="experience-heading">Ausbildung</h2>
       <ul>
-        <li className="relative flex items-baseline gap-6 pb-5">
+        <li className="experience-container">
           <div className="before:absolute before:left-1.5 before:h-full before:w-[1px] before:bg-teal-600">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -25,7 +25,7 @@ export default function Education() {
               Software-Engineering, Datenbanken & Informationssysteme
             </p>
             <div className="flex my-4">
-              <ul className="list-none flex gap-1">
+              <ul className="tools-list">
                 <li className="experience-tools-tag">HTML5</li>
                 <li className="experience-tools-tag">CSS3</li>
                 <li className="experience-tools-tag">Bootstrap</li>
@@ -40,7 +40,7 @@ export default function Education() {
             </div>
           </div>
         </li>
-        <li className="relative flex items-baseline gap-6 pb-5">
+        <li className="experience-container">
           <div>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -61,7 +61,7 @@ export default function Education() {
               Modern Webdevelopment Lehrgang
             </p>
             <div className="flex my-4">
-              <ul className="list-none flex gap-1">
+              <ul className="tools-list">
                 <li className="experience-tools-tag">HTML5</li>
                 <li className="experience-tools-tag">CSS3</li>
                 <li className="experience-tools-tag">SCSS</li>

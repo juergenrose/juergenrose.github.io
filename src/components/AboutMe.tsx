@@ -1,7 +1,7 @@
 export default function AboutMe() {
   return (
     <section
-      className="flex flex-col items-center justify-center content-center w-[800px] mx-auto mt-20"
+      className="flex flex-col items-center justify-center content-center md:w-[800px] md:mx-auto mx-4 mt-20"
       id="aboutme"
     >
       <h1 className="aboutme-heading">Über mich</h1>

@@ -10,7 +10,7 @@ export default function Contact() {
           <img
             src="/src/assets/icons/linkedin.svg"
             alt="linkedin icon"
-            className="w-16 h-16 rounded-full p-2 bg-violet-500 hover:bg-teal-500 transition-colors"
+            className="md:w-16 md:h-16 w-12 h-12 rounded-full p-2 bg-violet-500 hover:bg-teal-500 transition-colors"
           />
         </a>
 
@@ -18,7 +18,7 @@ export default function Contact() {
           <img
             src="/src/assets/icons/github.svg"
             alt="github icon"
-            className="w-16 h-16 rounded-full p-2 bg-violet-500 hover:bg-teal-500 transition-colors"
+            className="md:w-16 md:h-16 w-12 h-12 rounded-full p-2 bg-violet-500 hover:bg-teal-500 transition-colors"
           />
         </a>
 
@@ -26,7 +26,7 @@ export default function Contact() {
           <img
             src="/src/assets/icons/mail.svg"
             alt="github icon"
-            className="w-16 h-16 rounded-full p-2 bg-violet-500 hover:bg-teal-500 transition-colors"
+            className="md:w-16 md:h-16 w-12 h-12 rounded-full p-2 bg-violet-500 hover:bg-teal-500 transition-colors"
           />
         </a>
       </div>

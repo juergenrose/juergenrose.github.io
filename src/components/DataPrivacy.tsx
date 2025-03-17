@@ -2,13 +2,12 @@ import { Link } from "@tanstack/react-router";
 
 export default function DataPrivacy() {
   return (
-    <section className="flex flex-col gap-1 mx-auto items-start justify-center content-start w-[800px] mt-20">
+    <section className="flex flex-col gap-1 md:mx-auto px-4 items-start justify-center content-start md:w-[800px] md:mt-20 mt-10">
       <Link to="/" className="home-btn">
         <img
           src="/src/assets/icons/arrow-left.svg"
           alt="zurück zur Startseite Button"
         />
-        Zurück
       </Link>
 
       <h2 className="privacy-heading">Datenschutzerklärung</h2>
