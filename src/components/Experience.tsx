@@ -21,22 +21,24 @@ export default function Experience() {
           <div>
             <p className="experience-date-font">04/2024 - laufend</p>
             <p className="experience-company-font">
-              Fullstack Developer bei Shel Software & Engineering
+              Software Developer Trainee bei Shel Software & Engineering
             </p>
             <p className="experience-paragraph-font">
               Entwicklung des Report Generator, einer umfassende Lösung für die
               Erstellung und Bearbeitung verschiedener Arten von Berichten,
-              einschließlich JSON-, CSV- und PDF-Formaten. Das Projekt nutzt
-              mehrere SQL Datenbanken und bietet ein robustes Backend mit
-              anpassbaren Berichtsparametern und Vorschlägen. Die API ist zur
-              einfachen Integration und Prüfung mit Swagger dokumentiert.
-            </p>
+              einschließlich JSON-, CSV- und PDF-Formaten.</p>
+              <p className="experience-paragraph-font">Unterstützung bei der Weiterentwicklung von Inlabel, einer Software 
+              für die  individuelle Verfolgung von Flaschen, Behältern, Paletten 
+              oder einzelnen Gütern über den gesamten Lebenszyklus hinweg, 
+              von der Beschaffung bis zur Verschrottung.</p>
+              <p className="experience-paragraph-font">Diverse kleinere Software Projekte für Kunden im Industriebereich.</p>
             <div className="flex my-4">
               <ul className="tools-list">
                 <li className="experience-tools-tag">HTML5</li>
                 <li className="experience-tools-tag">CSS3</li>
                 <li className="experience-tools-tag">JavaScript</li>
                 <li className="experience-tools-tag">NodeJS</li>
+                <li className="experience-tools-tag">Object Pascal</li>
                 <li className="experience-tools-tag">Rest API</li>
                 <li className="experience-tools-tag">Swagger</li>
                 <li className="experience-tools-tag">XSLT</li>
