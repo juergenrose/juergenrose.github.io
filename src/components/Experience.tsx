@@ -34,8 +34,6 @@ export default function Experience() {
               <p className="experience-paragraph-font">Diverse kleinere Software Projekte für Kunden im Industriebereich.</p>
             <div className="flex my-4">
               <ul className="tools-list">
-                <li className="experience-tools-tag">HTML5</li>
-                <li className="experience-tools-tag">CSS3</li>
                 <li className="experience-tools-tag">JavaScript</li>
                 <li className="experience-tools-tag">NodeJS</li>
                 <li className="experience-tools-tag">Object Pascal</li>
