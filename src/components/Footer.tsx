@@ -13,6 +13,7 @@ export default function Footer() {
           </li>
         </ul>
         <p className="footer-paragraph-font">&copy; by Jürgen Mosgan</p>
+        <p className="footer-paragraph-font mt-5"><a href="https://devicon.dev">Icons by Devicon</a> – Licensed under the MIT License</p>
       </div>
     </footer>
   );
