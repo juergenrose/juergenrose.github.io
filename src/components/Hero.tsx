@@ -17,7 +17,7 @@ export default function Hero() {
             Hallo, mein Name ist{" "}
             <span className="hero-span">Jürgen Mosgan</span>.
           </h1>
-          <p className="hero-paragraph">Webentwickler und Linux Enthusiast</p>
+          <p className="hero-paragraph">Software Entwickler und Linux Enthusiast</p>
           <a href="#aboutme" className="hero-btn">
             Mehr erfahren
           </a>

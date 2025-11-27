@@ -21,13 +21,10 @@ export default function Experience() {
           <div>
             <p className="experience-date-font">04/2024 - laufend</p>
             <p className="experience-company-font">
-              Software Developer Trainee bei Shel Software & Engineering
+              Software Entwickler Trainee bei Shel Software & Engineering
             </p>
             <p className="experience-paragraph-font">
-              Entwicklung des Report Generator, einer umfassende Lösung für die
-              Erstellung und Bearbeitung verschiedener Arten von Berichten,
-              einschließlich JSON-, CSV- und PDF-Formaten.</p>
-              <p className="experience-paragraph-font">Unterstützung bei der Weiterentwicklung von Inlabel, einer Software 
+              Unterstützung bei der Weiterentwicklung von Inlabel, einer Software 
               für die  individuelle Verfolgung von Flaschen, Behältern, Paletten 
               oder einzelnen Gütern über den gesamten Lebenszyklus hinweg, 
               von der Beschaffung bis zur Verschrottung.</p>
@@ -36,7 +33,7 @@ export default function Experience() {
               <ul className="tools-list">
                 <li className="experience-tools-tag">JavaScript</li>
                 <li className="experience-tools-tag">NodeJS</li>
-                <li className="experience-tools-tag">Object Pascal</li>
+                <li className="experience-tools-tag">Delphi</li>
                 <li className="experience-tools-tag">Rest API</li>
                 <li className="experience-tools-tag">Swagger</li>
                 <li className="experience-tools-tag">XSLT</li>
@@ -61,7 +58,7 @@ export default function Experience() {
           <div>
             <p className="experience-date-font">12/2023 - 04/2024</p>
             <p className="experience-company-font">
-              Praktikum als Fullstack Developer bei SimpleWay Technologies
+              Praktikum als Fullstack Webentwickler bei SimpleWay Technologies
             </p>
             <p className="experience-paragraph-font">
               Einführung in die Fullstack Webentwicklung, Entwicklung eines
@@ -76,8 +73,6 @@ export default function Experience() {
                 <li className="experience-tools-tag">JavaScript</li>
                 <li className="experience-tools-tag">NodeJS</li>
                 <li className="experience-tools-tag">Rest API</li>
-                <li className="experience-tools-tag">Python</li>
-                <li className="experience-tools-tag">Django</li>
                 <li className="experience-tools-tag">MySQL</li>
               </ul>
             </div>
@@ -136,7 +131,7 @@ export default function Experience() {
           <div>
             <p className="experience-date-font">2004 - 2007</p>
             <p className="experience-company-font">
-              Maurerlehre bei Johann Müller Plan & Bau GmbH
+              Maurerlehre bei Johann Müller Plan & Bau GmbH mit LAP
             </p>
           </div>
         </li>
