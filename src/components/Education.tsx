@@ -65,12 +65,12 @@ export default function Education() {
                 <li className="experience-tools-tag">HTML5</li>
                 <li className="experience-tools-tag">CSS3</li>
                 <li className="experience-tools-tag">SCSS</li>
+                <li className="experience-tools-tag">TailwindCSS</li>
                 <li className="experience-tools-tag">JavaScript</li>
                 <li className="experience-tools-tag">TypeScript</li>
                 <li className="experience-tools-tag">React</li>
                 <li className="experience-tools-tag">Tanstack</li>
                 <li className="experience-tools-tag">Rest API</li>
-                <li className="experience-tools-tag">Vite</li>
               </ul>
             </div>
           </div>
