@@ -19,7 +19,7 @@ export default function Experience() {
             </svg>
           </div>
           <div>
-            <p className="experience-date-font">04/2025 - laufend</p>
+            <p className="experience-date-font">04/2025 - 01/2026</p>
             <p className="experience-company-font">
               Software Entwickler bei Shel Software & Engineering
             </p>
@@ -122,7 +122,7 @@ export default function Experience() {
               Praktikum als Fullstack Webentwickler bei SimpleWay Technologies
             </p>
             <p className="experience-paragraph-font">
-              Einführung in die Fullstack Webentwicklung, Entwicklung eines
+              Entwicklung eines
               Gerätemanagers mit CRUD-Funktionalität, Implementierung der
               Benutzer-Authentifizierung, Erstellung eines Admin- und User-Dashboards 
               zur Verwaltung der Geräte
