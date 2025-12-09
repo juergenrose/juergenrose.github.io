@@ -19,21 +19,82 @@ export default function Experience() {
             </svg>
           </div>
           <div>
-            <p className="experience-date-font">04/2024 - laufend</p>
+            <p className="experience-date-font">04/2025 - laufend</p>
             <p className="experience-company-font">
-              Software Entwickler Trainee bei Shel Software & Engineering
+              Software Entwickler bei Shel Software & Engineering
             </p>
             <p className="experience-paragraph-font">
-              Unterstützung bei der Weiterentwicklung von Inlabel, einer Software 
-              für die  individuelle Verfolgung von Flaschen, Behältern, Paletten 
-              oder einzelnen Gütern über den gesamten Lebenszyklus hinweg, 
-              von der Beschaffung bis zur Verschrottung.</p>
-              <p className="experience-paragraph-font">Diverse kleinere Software Projekte für Kunden im Industriebereich.</p>
+              Weiterentwicklung der bestehenden  Software Inlabel. 
+              Diverse kleinere Projekte für Kunden im Industriebereich. 
+              Erstellung von Berichten nach Kundenvorgaben.</p>
+            <div className="flex my-4">
+              <ul className="tools-list">
+                <li className="experience-tools-tag">Delphi</li>
+                <li className="experience-tools-tag">Rest API</li>
+                <li className="experience-tools-tag">Swagger</li>
+                <li className="experience-tools-tag">XSLT</li>
+                <li className="experience-tools-tag">MySQL</li>
+                <li className="experience-tools-tag">MSSQL</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li className="experience-container">
+          <div className="before:absolute before:left-1.5 before:h-full before:w-[1px] before:bg-teal-600">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="12"
+              height="12"
+              className="bi bi-circle-fill fill-teal-600"
+              viewBox="0 0 16 16"
+            >
+              <circle cx="8" cy="8" r="8" />
+            </svg>
+          </div>
+          <div>
+            <p className="experience-date-font">09/2024 - 03/2025</p>
+            <p className="experience-company-font">
+              Modern Webdevelopment Lehrgang
+            </p>
+            <div className="flex my-4">
+              <ul className="tools-list">
+                <li className="experience-tools-tag">HTML5</li>
+                <li className="experience-tools-tag">CSS3</li>
+                <li className="experience-tools-tag">SCSS</li>
+                <li className="experience-tools-tag">TailwindCSS</li>
+                <li className="experience-tools-tag">JavaScript</li>
+                <li className="experience-tools-tag">TypeScript</li>
+                <li className="experience-tools-tag">React</li>
+                <li className="experience-tools-tag">Tanstack</li>
+                <li className="experience-tools-tag">Rest API</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li className="experience-container">
+          <div className="before:absolute before:left-1.5 before:h-full before:w-[1px] before:bg-teal-600">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="12"
+              height="12"
+              className="bi bi-circle-fill fill-teal-600"
+              viewBox="0 0 16 16"
+            >
+              <circle cx="8" cy="8" r="8" />
+            </svg>
+          </div>
+          <div>
+            <p className="experience-date-font">04/2024 - 09/2024</p>
+            <p className="experience-company-font">
+              Praktikum als Software Entwickler bei Shel Software & Engineering
+            </p>
+            <p className="experience-paragraph-font">
+              Erstellung eines Report Generators, einer umfangreichen Lösung zum erstellen und verwalten
+              verschiedener Arten von berichten. Backend mit anpassbaren Berichtsparametern und Vorschlägen</p>
             <div className="flex my-4">
               <ul className="tools-list">
                 <li className="experience-tools-tag">JavaScript</li>
                 <li className="experience-tools-tag">NodeJS</li>
-                <li className="experience-tools-tag">Delphi</li>
                 <li className="experience-tools-tag">Rest API</li>
                 <li className="experience-tools-tag">Swagger</li>
                 <li className="experience-tools-tag">XSLT</li>
@@ -63,8 +124,8 @@ export default function Experience() {
             <p className="experience-paragraph-font">
               Einführung in die Fullstack Webentwicklung, Entwicklung eines
               Gerätemanagers mit CRUD-Funktionalität, Implementierung der
-              Benutzer-Authentifizierung (Login, Registrierung), Erstellung
-              eines Admin- und User-Dashboards zur Verwaltung der Geräte
+              Benutzer-Authentifizierung, Erstellung eines Admin- und User-Dashboards 
+              zur Verwaltung der Geräte
             </p>
             <div className="flex my-4">
               <ul className="tools-list">
