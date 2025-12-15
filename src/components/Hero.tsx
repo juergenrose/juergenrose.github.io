@@ -1,26 +1,22 @@
-import portraitImage from "../assets/myself.png";
+import portraitImage from "../assets/myself.jpg";
 
 export default function Hero() {
   return (
-    <section className="flex justify-center items-center content-center px-4 md:pt-40 pt-10 bg-gray-950 border-b-2 border-violet-400">
+    <section className="flex justify-center items-center content-center px-4 py-10 bg-gray-950 rounded-t-xl border-b-1 border-emerald-500">
       <div className="grid md:grid-cols-2 grid-cols-1 gap-0 ">
-        <div className="flex content-center items-center mx-auto md:w-[600px]">
+        <div className="flex content-center items-center mx-auto">
           <img
             src={portraitImage}
             alt="Bild des Webseiten Erstellers"
-            className="md:w-150 w-100 h-auto"
+            className="  w-50 h-auto rounded-full bg-emerald-500"
           />
           ;
         </div>
-        <div className="flex flex-col gap-2 my-auto justify-center md:w-[600px] content-center items-center text-center">
+        <div className="flex flex-col md:my-auto mx-auto md:mr-20 mt-10 text-center">
           <h1 className="hero-heading">
-            Hallo, mein Name ist{" "}
-            <span className="hero-span">Jürgen Mosgan</span>.
+            Hallo, mein Name ist {" "}
+            <span className="hero-span">J&uuml;rgen Mosgan</span>.
           </h1>
-          <p className="hero-paragraph">Software Entwickler und Linux Enthusiast</p>
-          <a href="#aboutme" className="hero-btn">
-            Mehr erfahren
-          </a>
         </div>
       </div>
     </section>

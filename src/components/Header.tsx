@@ -1,6 +1,7 @@
 import { useState } from "react";
 import hamburgerIcon from "../assets/icons/hamburger.svg";
 import closeIcon from "../assets/icons/close.svg";
+import { Link } from "@tanstack/react-router";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,23 +12,20 @@ export default function Header() {
         {/* Desktop navigation */}
         <ul className="nav-bar">
           <li className="nav-link">
-            <a href="#aboutme">Über mich</a>
+            <Link to="/">&Uuml;ber mich</Link>
           </li>
           <li className="nav-link">
-            <a href="#experience">Berufserfahrung</a>
+            <Link to="/Experience">Berufserfahrung</Link>
           </li>
           <li className="nav-link">
-            <a href="#education">Ausbildung</a>
-          </li>
-          <li className="nav-link">
-            <a href="#contact">Kontakt</a>
+            <Link to="/Education">Ausbildungen</Link>
           </li>
         </ul>
 
         {/* Mobile menu button */}
         <div className="md:hidden flex justify-end">
-          <button onClick={() => setIsOpen(true)} className="text-violet-500">
-            <img src={hamburgerIcon} alt="" className="text-violet-400 p-2" />
+          <button onClick={() => setIsOpen(true)} className="text-gray-500">
+            <img src={hamburgerIcon} alt="" className="text-gray-400 p-2" />
           </button>
         </div>
 
@@ -49,31 +47,20 @@ export default function Header() {
                 <img
                   src={closeIcon}
                   alt=""
-                  className="text-teal-400 hover:text-violet-400 p-1"
+                  className="text-gray-400 hover:text-gray-400 p-1"
                 />
               </button>
 
               {/* Mobile menu links */}
               <ul className="flex flex-col gap-6">
                 <li className="nav-link text-center">
-                  <a href="#aboutme" onClick={() => setIsOpen(false)}>
-                    Über mich
-                  </a>
+                  <Link to="/" onClick={() => setIsOpen(false)}>&Uuml;ber mich</Link>
                 </li>
                 <li className="nav-link text-center">
-                  <a href="#experience" onClick={() => setIsOpen(false)}>
-                    Berufserfahrung
-                  </a>
+                  <Link to="/Experience" onClick={() => setIsOpen(false)}>Berufserfahrung</Link>
                 </li>
                 <li className="nav-link text-center">
-                  <a href="#education" onClick={() => setIsOpen(false)}>
-                    Ausbildung
-                  </a>
-                </li>
-                <li className="nav-link text-center">
-                  <a href="#contact" onClick={() => setIsOpen(false)}>
-                    Kontakt
-                  </a>
+                  <Link to="/Education" onClick={() => setIsOpen(false)}>Ausbildung</Link>                  
                 </li>
               </ul>
             </div>
