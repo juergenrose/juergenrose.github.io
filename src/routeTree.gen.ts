@@ -13,6 +13,8 @@
 import { Route as rootRoute } from './routes/__root'
 import { Route as PrivacyImport } from './routes/privacy'
 import { Route as ImprintImport } from './routes/imprint'
+import { Route as ExperienceImport } from './routes/Experience'
+import { Route as EducationImport } from './routes/Education'
 import { Route as IndexImport } from './routes/index'
 
 // Create/Update Routes
@@ -26,6 +28,18 @@ const PrivacyRoute = PrivacyImport.update({
 const ImprintRoute = ImprintImport.update({
   id: '/imprint',
   path: '/imprint',
+  getParentRoute: () => rootRoute,
+} as any)
+
+const ExperienceRoute = ExperienceImport.update({
+  id: '/Experience',
+  path: '/Experience',
+  getParentRoute: () => rootRoute,
+} as any)
+
+const EducationRoute = EducationImport.update({
+  id: '/Education',
+  path: '/Education',
   getParentRoute: () => rootRoute,
 } as any)
 
@@ -44,6 +58,20 @@ declare module '@tanstack/react-router' {
       path: '/'
       fullPath: '/'
       preLoaderRoute: typeof IndexImport
+      parentRoute: typeof rootRoute
+    }
+    '/Education': {
+      id: '/Education'
+      path: '/Education'
+      fullPath: '/Education'
+      preLoaderRoute: typeof EducationImport
+      parentRoute: typeof rootRoute
+    }
+    '/Experience': {
+      id: '/Experience'
+      path: '/Experience'
+      fullPath: '/Experience'
+      preLoaderRoute: typeof ExperienceImport
       parentRoute: typeof rootRoute
     }
     '/imprint': {
@@ -67,12 +95,16 @@ declare module '@tanstack/react-router' {
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/Education': typeof EducationRoute
+  '/Experience': typeof ExperienceRoute
   '/imprint': typeof ImprintRoute
   '/privacy': typeof PrivacyRoute
 }
 
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/Education': typeof EducationRoute
+  '/Experience': typeof ExperienceRoute
   '/imprint': typeof ImprintRoute
   '/privacy': typeof PrivacyRoute
 }
@@ -80,27 +112,33 @@ export interface FileRoutesByTo {
 export interface FileRoutesById {
   __root__: typeof rootRoute
   '/': typeof IndexRoute
+  '/Education': typeof EducationRoute
+  '/Experience': typeof ExperienceRoute
   '/imprint': typeof ImprintRoute
   '/privacy': typeof PrivacyRoute
 }
 
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/imprint' | '/privacy'
+  fullPaths: '/' | '/Education' | '/Experience' | '/imprint' | '/privacy'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/imprint' | '/privacy'
-  id: '__root__' | '/' | '/imprint' | '/privacy'
+  to: '/' | '/Education' | '/Experience' | '/imprint' | '/privacy'
+  id: '__root__' | '/' | '/Education' | '/Experience' | '/imprint' | '/privacy'
   fileRoutesById: FileRoutesById
 }
 
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  EducationRoute: typeof EducationRoute
+  ExperienceRoute: typeof ExperienceRoute
   ImprintRoute: typeof ImprintRoute
   PrivacyRoute: typeof PrivacyRoute
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  EducationRoute: EducationRoute,
+  ExperienceRoute: ExperienceRoute,
   ImprintRoute: ImprintRoute,
   PrivacyRoute: PrivacyRoute,
 }
@@ -116,12 +154,20 @@ export const routeTree = rootRoute
       "filePath": "__root.tsx",
       "children": [
         "/",
+        "/Education",
+        "/Experience",
         "/imprint",
         "/privacy"
       ]
     },
     "/": {
       "filePath": "index.tsx"
+    },
+    "/Education": {
+      "filePath": "Education.tsx"
+    },
+    "/Experience": {
+      "filePath": "Experience.tsx"
     },
     "/imprint": {
       "filePath": "imprint.tsx"
