@@ -24,47 +24,49 @@ export default function Header() {
 
         {/* Mobile menu button */}
         <div className="md:hidden flex justify-end">
-          <button onClick={() => setIsOpen(true)} className="text-gray-500">
-            <img src={hamburgerIcon} alt="" className="text-gray-400 p-2" />
+          <button onClick={() => setIsOpen(true)}>
+            <img src={hamburgerIcon} alt="" className="text-emerald-400 p-2" />
           </button>
         </div>
 
         {/* Mobile menu modal */}
         {isOpen && (
-          <div
-            className="fixed inset-0 bg-gray-500 bg-opacity-50 flex justify-center z-50"
-            onClick={() => setIsOpen(false)} // close when click outside
-          >
-            <div
-              className="mobile-menu relative"
-              onClick={(e) => e.stopPropagation()} // Prevent closing when clicking inside
-            >
-              {/* Close button */}
-              <button
-                onClick={() => setIsOpen(false)}
-                className="absolute top-7 right-7"
-              >
-                <img
-                  src={closeIcon}
-                  alt=""
-                  className="text-gray-400 hover:text-gray-400 p-1"
-                />
-              </button>
+          <div className={`fixed inset-0 z-50 bg-black/70 transition-opacity duration-700 
+            ${isOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"}
+          `}
+          onClick={() => setIsOpen(false)}>
+          <div className={`mobile-menu transform transition-all duration-700 ease-in-out
+              ${isOpen ? "translate-x-0" : "translate-x-full"}
+            `}
+            onClick={(e) => e.stopPropagation()}>
+            <button
+              onClick={() => setIsOpen(false)}
+              className="absolute top-7 right-2">
+              <img src={closeIcon} alt="" />
+            </button>
 
-              {/* Mobile menu links */}
-              <ul className="flex flex-col gap-6">
-                <li className="nav-link text-center">
-                  <Link to="/" onClick={() => setIsOpen(false)}>&Uuml;ber mich</Link>
-                </li>
-                <li className="nav-link text-center">
-                  <Link to="/Experience" onClick={() => setIsOpen(false)}>Berufserfahrung</Link>
-                </li>
-                <li className="nav-link text-center">
-                  <Link to="/Education" onClick={() => setIsOpen(false)}>Ausbildung</Link>                  
-                </li>
-              </ul>
-            </div>
+            <ul className="flex flex-col gap-6">
+              <li className="nav-link text-center">
+                <Link to="/" onClick={() => setIsOpen(false)}>Über mich</Link>
+              </li>
+              <li className="nav-link text-center">
+                <Link to="/Experience" onClick={() => setIsOpen(false)}>Berufserfahrung</Link>
+              </li>
+              <li className="nav-link text-center justify-end">
+                <Link to="/Education" onClick={() => setIsOpen(false)}>Ausbildung</Link>
+              </li>
+              <div className="flex text-sm fixed bottom-0 right-5">
+              <li className="footer-link text-center">
+                <Link to="/privacy" onClick={() => setIsOpen(false)}>Datenschutz</Link>
+              </li>
+              <li className="footer-link text-center">
+                <Link to="/imprint" onClick={() => setIsOpen(false)}>Impressum</Link>
+              </li>
+              </div>
+            </ul>
           </div>
+        </div>
+
         )}
       </nav>
     </header>

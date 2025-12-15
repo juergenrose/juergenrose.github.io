@@ -8,90 +8,38 @@
 // You should NOT make any changes in this file as it will be overwritten.
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
-// Import Routes
+import { Route as rootRouteImport } from './routes/__root'
+import { Route as PrivacyRouteImport } from './routes/privacy'
+import { Route as ImprintRouteImport } from './routes/imprint'
+import { Route as ExperienceRouteImport } from './routes/Experience'
+import { Route as EducationRouteImport } from './routes/Education'
+import { Route as IndexRouteImport } from './routes/index'
 
-import { Route as rootRoute } from './routes/__root'
-import { Route as PrivacyImport } from './routes/privacy'
-import { Route as ImprintImport } from './routes/imprint'
-import { Route as ExperienceImport } from './routes/Experience'
-import { Route as EducationImport } from './routes/Education'
-import { Route as IndexImport } from './routes/index'
-
-// Create/Update Routes
-
-const PrivacyRoute = PrivacyImport.update({
+const PrivacyRoute = PrivacyRouteImport.update({
   id: '/privacy',
   path: '/privacy',
-  getParentRoute: () => rootRoute,
+  getParentRoute: () => rootRouteImport,
 } as any)
-
-const ImprintRoute = ImprintImport.update({
+const ImprintRoute = ImprintRouteImport.update({
   id: '/imprint',
   path: '/imprint',
-  getParentRoute: () => rootRoute,
+  getParentRoute: () => rootRouteImport,
 } as any)
-
-const ExperienceRoute = ExperienceImport.update({
+const ExperienceRoute = ExperienceRouteImport.update({
   id: '/Experience',
   path: '/Experience',
-  getParentRoute: () => rootRoute,
+  getParentRoute: () => rootRouteImport,
 } as any)
-
-const EducationRoute = EducationImport.update({
+const EducationRoute = EducationRouteImport.update({
   id: '/Education',
   path: '/Education',
-  getParentRoute: () => rootRoute,
+  getParentRoute: () => rootRouteImport,
 } as any)
-
-const IndexRoute = IndexImport.update({
+const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
-  getParentRoute: () => rootRoute,
+  getParentRoute: () => rootRouteImport,
 } as any)
-
-// Populate the FileRoutesByPath interface
-
-declare module '@tanstack/react-router' {
-  interface FileRoutesByPath {
-    '/': {
-      id: '/'
-      path: '/'
-      fullPath: '/'
-      preLoaderRoute: typeof IndexImport
-      parentRoute: typeof rootRoute
-    }
-    '/Education': {
-      id: '/Education'
-      path: '/Education'
-      fullPath: '/Education'
-      preLoaderRoute: typeof EducationImport
-      parentRoute: typeof rootRoute
-    }
-    '/Experience': {
-      id: '/Experience'
-      path: '/Experience'
-      fullPath: '/Experience'
-      preLoaderRoute: typeof ExperienceImport
-      parentRoute: typeof rootRoute
-    }
-    '/imprint': {
-      id: '/imprint'
-      path: '/imprint'
-      fullPath: '/imprint'
-      preLoaderRoute: typeof ImprintImport
-      parentRoute: typeof rootRoute
-    }
-    '/privacy': {
-      id: '/privacy'
-      path: '/privacy'
-      fullPath: '/privacy'
-      preLoaderRoute: typeof PrivacyImport
-      parentRoute: typeof rootRoute
-    }
-  }
-}
-
-// Create and export the route tree
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -100,7 +48,6 @@ export interface FileRoutesByFullPath {
   '/imprint': typeof ImprintRoute
   '/privacy': typeof PrivacyRoute
 }
-
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/Education': typeof EducationRoute
@@ -108,16 +55,14 @@ export interface FileRoutesByTo {
   '/imprint': typeof ImprintRoute
   '/privacy': typeof PrivacyRoute
 }
-
 export interface FileRoutesById {
-  __root__: typeof rootRoute
+  __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/Education': typeof EducationRoute
   '/Experience': typeof ExperienceRoute
   '/imprint': typeof ImprintRoute
   '/privacy': typeof PrivacyRoute
 }
-
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths: '/' | '/Education' | '/Experience' | '/imprint' | '/privacy'
@@ -126,13 +71,52 @@ export interface FileRouteTypes {
   id: '__root__' | '/' | '/Education' | '/Experience' | '/imprint' | '/privacy'
   fileRoutesById: FileRoutesById
 }
-
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   EducationRoute: typeof EducationRoute
   ExperienceRoute: typeof ExperienceRoute
   ImprintRoute: typeof ImprintRoute
   PrivacyRoute: typeof PrivacyRoute
+}
+
+declare module '@tanstack/react-router' {
+  interface FileRoutesByPath {
+    '/privacy': {
+      id: '/privacy'
+      path: '/privacy'
+      fullPath: '/privacy'
+      preLoaderRoute: typeof PrivacyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/imprint': {
+      id: '/imprint'
+      path: '/imprint'
+      fullPath: '/imprint'
+      preLoaderRoute: typeof ImprintRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/Experience': {
+      id: '/Experience'
+      path: '/Experience'
+      fullPath: '/Experience'
+      preLoaderRoute: typeof ExperienceRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/Education': {
+      id: '/Education'
+      path: '/Education'
+      fullPath: '/Education'
+      preLoaderRoute: typeof EducationRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/': {
+      id: '/'
+      path: '/'
+      fullPath: '/'
+      preLoaderRoute: typeof IndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+  }
 }
 
 const rootRouteChildren: RootRouteChildren = {
@@ -142,39 +126,6 @@ const rootRouteChildren: RootRouteChildren = {
   ImprintRoute: ImprintRoute,
   PrivacyRoute: PrivacyRoute,
 }
-
-export const routeTree = rootRoute
+export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
-
-/* ROUTE_MANIFEST_START
-{
-  "routes": {
-    "__root__": {
-      "filePath": "__root.tsx",
-      "children": [
-        "/",
-        "/Education",
-        "/Experience",
-        "/imprint",
-        "/privacy"
-      ]
-    },
-    "/": {
-      "filePath": "index.tsx"
-    },
-    "/Education": {
-      "filePath": "Education.tsx"
-    },
-    "/Experience": {
-      "filePath": "Experience.tsx"
-    },
-    "/imprint": {
-      "filePath": "imprint.tsx"
-    },
-    "/privacy": {
-      "filePath": "privacy.tsx"
-    }
-  }
-}
-ROUTE_MANIFEST_END */
