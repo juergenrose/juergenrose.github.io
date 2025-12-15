@@ -26,7 +26,7 @@ export default function Experience() {
             </p>
             <p className="experience-paragraph-font">
               Weiterentwicklung der bestehenden Software Inlabel. 
-              Diverse kleinere Projekte f&uml;r Kunden im Industriebereich. 
+              Diverse kleinere Projekte f&uuml;r Kunden im Industriebereich. 
               Erstellung von Berichten nach Kundenvorgaben.</p>
             <div className="flex my-4">
               <ul className="tools-list">
