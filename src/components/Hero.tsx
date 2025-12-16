@@ -1,4 +1,4 @@
-import portraitImage from "../assets/myself.jpg";
+import portraitImage from "../assets/myself.png";
 
 export default function Hero() {
   return (
@@ -8,7 +8,7 @@ export default function Hero() {
           <img
             src={portraitImage}
             alt="Bild des Webseiten Erstellers"
-            className="  w-50 h-auto rounded-full bg-emerald-500"
+            className="  w-60 h-auto rounded-full bg-emerald-500 shadow-sm shadow-emerald-500"
           />
           ;
         </div>
