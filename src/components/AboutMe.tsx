@@ -23,6 +23,7 @@ export default function AboutMe() {
           <li className="experience-tools-tag">Java</li>
           <li className="experience-tools-tag">Spring Boot</li>
           <li className="experience-tools-tag">MySQL</li>
+          <li className="experience-tools-tag">Bash</li>
           <li className="experience-tools-tag">Linux</li>
         </ul>
       </div>
